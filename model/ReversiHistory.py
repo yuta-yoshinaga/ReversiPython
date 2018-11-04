@@ -1,6 +1,6 @@
 # ////////////////////////////////////////////////////////////////////////////////
-# ///	@file			ReversiPoint.py
-# ///	@brief			リバーシポイントクラス実装ファイル
+# ///	@file			ReversiHistory.py
+# ///	@brief			リバーシ履歴クラス実装ファイル
 # ///	@author			Yuta Yoshinaga
 # ///	@date			2018.04.01
 # ///	$Version:		$
@@ -15,75 +15,92 @@
 # ///
 # ////////////////////////////////////////////////////////////////////////////////
 
+import ReversiPoint
+
 # ////////////////////////////////////////////////////////////////////////////////
-# ///	@class		ReversiPoint
-# ///	@brief		リバーシポイントクラス
+# ///	@class		ReversiHistory
+# ///	@brief		リバーシ履歴クラス
 # ///
 # ////////////////////////////////////////////////////////////////////////////////
-class ReversiPoint:
+class ReversiHistory:
 
 	# ////////////////////////////////////////////////////////////////////////////////
 	# ///	@brief			コンストラクタ
 	# ///	@fn				__init__(self)
 	# ///	@return			ありません
 	# ///	@author			Yuta Yoshinaga
-	# ///	@date			2018.04.01
+	# ///	@date			2014.07.23
 	# ///
 	# ////////////////////////////////////////////////////////////////////////////////
 	def __init__(self):
-		self.__x = 0
-		self.__y = 0
+		self.__point = ReversiPoint.ReversiPoint()
+		self.__color = 0
+		self.reset();
 
 	# ////////////////////////////////////////////////////////////////////////////////
 	# ///	@brief			ゲッター
-	# ///	@fn				get_x(self)
+	# ///	@fn				get_point(self)
 	# ///	@param[in]		self
-	# ///	@return			x
+	# ///	@return			ReversiPoint point
 	# ///	@author			Yuta Yoshinaga
 	# ///	@date			2018.04.01
 	# ///
 	# ////////////////////////////////////////////////////////////////////////////////
-	def get_x(self):
-		return self.__x
+	def get_point(self):
+		return self.__point
 
 	# ////////////////////////////////////////////////////////////////////////////////
 	# ///	@brief			セッター
-	# ///	@fn				set_x(self,x)
+	# ///	@fn				set_point(self, point)
 	# ///	@param[in]		self
-	# ///	@param[in]		x
+	# ///	@param[in]		point
 	# ///	@return			ありません
 	# ///	@author			Yuta Yoshinaga
 	# ///	@date			2018.04.01
 	# ///
 	# ////////////////////////////////////////////////////////////////////////////////
-	def set_x(self, x):
-		self.__x = x
+	def set_point(self, point):
+		self.__point = point
 
 	# ////////////////////////////////////////////////////////////////////////////////
 	# ///	@brief			ゲッター
-	# ///	@fn				get_y(self)
+	# ///	@fn				get_color(self)
 	# ///	@param[in]		self
-	# ///	@return			y
+	# ///	@return			color
 	# ///	@author			Yuta Yoshinaga
 	# ///	@date			2018.04.01
 	# ///
 	# ////////////////////////////////////////////////////////////////////////////////
-	def get_y(self):
-		return self.__y
+	def get_color(self):
+		return self.__color
 
 	# ////////////////////////////////////////////////////////////////////////////////
 	# ///	@brief			セッター
-	# ///	@fn				set_y(self,y)
+	# ///	@fn				set_color(self, color)
 	# ///	@param[in]		self
-	# ///	@param[in]		y
+	# ///	@param[in]		color
 	# ///	@return			ありません
 	# ///	@author			Yuta Yoshinaga
 	# ///	@date			2018.04.01
 	# ///
 	# ////////////////////////////////////////////////////////////////////////////////
-	def set_y(self, y):
-		self.__y = y
+	def set_color(self, color):
+		self.__color = color
 
-	x = property(get_x, set_x)
-	y = property(get_y, set_y)
+	# ////////////////////////////////////////////////////////////////////////////////
+	# ///	@brief			リセット
+	# ///	@fn				reset(self)
+	# ///	@param[in]		self
+	# ///	@return			ありません
+	# ///	@author			Yuta Yoshinaga
+	# ///	@date			2014.07.23
+	# ///
+	# ////////////////////////////////////////////////////////////////////////////////
+	def reset(self):
+		self.__point.x = -1
+		self.__point.y = -1
+		self.__color = -1
+
+	point = property(get_point, set_point)
+	color = property(get_color, set_color)
 

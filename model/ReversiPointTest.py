@@ -15,7 +15,6 @@
 # ///
 # ////////////////////////////////////////////////////////////////////////////////
 
-from unittest import TestCase
 import ReversiPoint
 
 # ////////////////////////////////////////////////////////////////////////////////
@@ -27,25 +26,25 @@ class ReversiPointTest:
 
 	# ////////////////////////////////////////////////////////////////////////////////
 	# ///	@brief			コンストラクタ
-	# ///	@fn				public ReversiPoint()
+	# ///	@fn				__init__(self)
 	# ///	@return			ありません
 	# ///	@author			Yuta Yoshinaga
 	# ///	@date			2018.04.01
 	# ///
 	# ////////////////////////////////////////////////////////////////////////////////
 	def __init__(self):
-		self.obj = ReversiPoint()
+		self.tgt = ReversiPoint.ReversiPoint()
 
 	def test_case1(self):
-		self.obj.x = 1
-		if obj.x == 1:
+		self.tgt.x = 1
+		if self.tgt.x == 1:
 			print("TEST CASE1 OK")
 		else:
 			print("TEST CASE1 NG")
 
 	def test_case2(self):
-		self.obj.y = 1
-		if obj.y == 1:
+		self.tgt.y = 1
+		if self.tgt.y == 1:
 			print("TEST CASE2 OK")
 		else:
 			print("TEST CASE2 NG")
