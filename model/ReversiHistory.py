@@ -35,7 +35,7 @@ class ReversiHistory:
 	def __init__(self):
 		self.__point = ReversiPoint.ReversiPoint()
 		self.__color = 0
-		self.reset();
+		self.reset()
 
 	# ////////////////////////////////////////////////////////////////////////////////
 	# ///	@brief			ゲッター
