@@ -103,5 +103,5 @@ class ReversiHistory:
         self.__point.y = -1
         self.__color = -1
 
-    point = property(getPoint, setPoint)
-    color = property(getColor, setColor)
+    point = property(getPoint, setPoint) # !< リバーシポイント
+    color = property(getColor, setColor) # !< カラー

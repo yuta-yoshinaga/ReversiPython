@@ -86,5 +86,5 @@ class ReversiPoint:
     def setY(self, y):
         self.__y = y
 
-    x = property(getX, setX)
-    y = property(getY, setY)
+    x = property(getX, setX) # !< X座標
+    y = property(getY, setY) # !< Y座標

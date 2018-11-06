@@ -530,26 +530,18 @@ class ReversiAnz:
     avg = property(getAvg, setAvg)  # !< 平均
     pointCnt = property(getPointCnt, setPointCnt)  # !< 置けるポイント数
     edgeCnt = property(getEdgeCnt, setEdgeCnt)  # !< 角を取れるポイント数
-    edgeSideOneCnt = property(
-        getEdgeSideOneCnt, setEdgeSideOneCnt)  # !< 角一つ前を取れるポイント数
-    edgeSideTwoCnt = property(
-        getEdgeSideTwoCnt, setEdgeSideTwoCnt)  # !< 角二つ前を取れるポイント数
-    edgeSideThreeCnt = property(
-        getEdgeSideThreeCnt, setEdgeSideThreeCnt)  # !< 角三つ前を取れるポイント数
-    edgeSideOtherCnt = property(
-        getEdgeSideOtherCnt, setEdgeSideOtherCnt)  # !< それ以外を取れるポイント数
+    edgeSideOneCnt = property(getEdgeSideOneCnt, setEdgeSideOneCnt)  # !< 角一つ前を取れるポイント数
+    edgeSideTwoCnt = property(getEdgeSideTwoCnt, setEdgeSideTwoCnt)  # !< 角二つ前を取れるポイント数
+    edgeSideThreeCnt = property(getEdgeSideThreeCnt, setEdgeSideThreeCnt)  # !< 角三つ前を取れるポイント数
+    edgeSideOtherCnt = property(getEdgeSideOtherCnt, setEdgeSideOtherCnt)  # !< それ以外を取れるポイント数
     ownMin = property(getOwnMin, setOwnMin)  # !< 最小値
     ownMax = property(getOwnMax, setOwnMax)  # !< 最大値
     ownAvg = property(getOwnAvg, setOwnAvg)  # !< 平均
     ownPointCnt = property(getOwnPointCnt, setOwnPointCnt)  # !< 置けるポイント数
     ownEdgeCnt = property(getOwnEdgeCnt, setOwnEdgeCnt)  # !< 角を取れるポイント数
-    ownEdgeSideOneCnt = property(
-        getOwnEdgeSideOneCnt, setOwnEdgeSideOneCnt)  # !< 角一つ前を取れるポイント数
-    ownEdgeSideTwoCnt = property(
-        getOwnEdgeSideTwoCnt, setOwnEdgeSideTwoCnt)  # !< 角二つ前を取れるポイント数
-    ownEdgeSideThreeCnt = property(
-        getOwnEdgeSideThreeCnt, setOwnEdgeSideThreeCnt)  # !< 角三つ前を取れるポイント数
-    ownEdgeSideOtherCnt = property(
-        getOwnEdgeSideOtherCnt, setOwnEdgeSideOtherCnt)  # !< それ以外を取れるポイント数
+    ownEdgeSideOneCnt = property(getOwnEdgeSideOneCnt, setOwnEdgeSideOneCnt)  # !< 角一つ前を取れるポイント数
+    ownEdgeSideTwoCnt = property(getOwnEdgeSideTwoCnt, setOwnEdgeSideTwoCnt)  # !< 角二つ前を取れるポイント数
+    ownEdgeSideThreeCnt = property(getOwnEdgeSideThreeCnt, setOwnEdgeSideThreeCnt)  # !< 角三つ前を取れるポイント数
+    ownEdgeSideOtherCnt = property(getOwnEdgeSideOtherCnt, setOwnEdgeSideOtherCnt)  # !< それ以外を取れるポイント数
     badPoint = property(getBadPoint, setBadPoint)  # !< 悪手ポイント
     goodPoint = property(getGoodPoint, setGoodPoint)  # !< 良手ポイント
