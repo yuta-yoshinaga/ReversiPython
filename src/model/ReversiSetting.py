@@ -15,6 +15,8 @@
 #
 ################################################################################
 
+import ReversiConst
+
 ################################################################################
 #	@class		ReversiSetting
 #	@brief		アプリ設定クラス
@@ -37,445 +39,445 @@ class ReversiSetting:
         self.reset()
 
     ############################################################################
-        #	@brief			ゲッター
-        #	@fn				getmMode(self)
+    #	@brief			ゲッター
+    #	@fn				getmMode(self)
     #	@param[in]		self
-        #	@return			mMode
-        #	@author			Yuta Yoshinaga
+    #	@return			mMode
+    #	@author			Yuta Yoshinaga
     #	@date			2018.11.07
-        #
+    #
     ############################################################################
-        def getmMode(self):
-            return self.__mMode
+    def getmMode(self):
+        return self.__mMode
 
     ############################################################################
-        #	@brief			セッター
-        #	@fn				setmMode(self, mMode)
+    #	@brief			セッター
+    #	@fn				setmMode(self, mMode)
     #	@param[in]		self
-        #	@param[in]		mMode
-        #	@return			ありません
-        #	@author			Yuta Yoshinaga
+    #	@param[in]		mMode
+    #	@return			ありません
+    #	@author			Yuta Yoshinaga
     #	@date			2018.11.07
-        #
+    #
     ############################################################################
-        def setmMode(self, mMode):
-            self.__mMode = mMode
+    def setmMode(self, mMode):
+        self.__mMode = mMode
 
     ############################################################################
-        #	@brief			ゲッター
-        #	@fn				getmType(self)
+    #	@brief			ゲッター
+    #	@fn				getmType(self)
     #	@param[in]		self
-        #	@return			mType
-        #	@author			Yuta Yoshinaga
+    #	@return			mType
+    #	@author			Yuta Yoshinaga
     #	@date			2018.11.07
-        #
+    #
     ############################################################################
-        def getmType(self):
-            return self.__mType
+    def getmType(self):
+        return self.__mType
 
     ############################################################################
-        #	@brief			セッター
-        #	@fn				setmType(self, mType)
+    #	@brief			セッター
+    #	@fn				setmType(self, mType)
     #	@param[in]		self
-        #	@param[in]		mType
-        #	@return			ありません
-        #	@author			Yuta Yoshinaga
+    #	@param[in]		mType
+    #	@return			ありません
+    #	@author			Yuta Yoshinaga
     #	@date			2018.11.07
-        #
+    #
     ############################################################################
-        def setmType(self, mType):
-            self.__mType = mType
+    def setmType(self, mType):
+        self.__mType = mType
 
     ############################################################################
-        #	@brief			ゲッター
-        #	@fn				getmPlayer(self)
+    #	@brief			ゲッター
+    #	@fn				getmPlayer(self)
     #	@param[in]		self
-        #	@return			mPlayer
-        #	@author			Yuta Yoshinaga
+    #	@return			mPlayer
+    #	@author			Yuta Yoshinaga
     #	@date			2018.11.07
-        #
+    #
     ############################################################################
-        def getmPlayer(self):
-            return self.__mPlayer
+    def getmPlayer(self):
+        return self.__mPlayer
 
     ############################################################################
-        #	@brief			セッター
-        #	@fn				setmPlayer(self, mPlayer)
+    #	@brief			セッター
+    #	@fn				setmPlayer(self, mPlayer)
     #	@param[in]		self
-        #	@param[in]		mPlayer
-        #	@return			ありません
-        #	@author			Yuta Yoshinaga
+    #	@param[in]		mPlayer
+    #	@return			ありません
+    #	@author			Yuta Yoshinaga
     #	@date			2018.11.07
-        #
+    #
     ############################################################################
-        def setmPlayer(self, mPlayer):
-            self.__mPlayer = mPlayer
+    def setmPlayer(self, mPlayer):
+        self.__mPlayer = mPlayer
 
     ############################################################################
-        #	@brief			ゲッター
-        #	@fn				getmAssist(self)
+    #	@brief			ゲッター
+    #	@fn				getmAssist(self)
     #	@param[in]		self
-        #	@return			mAssist
-        #	@author			Yuta Yoshinaga
+    #	@return			mAssist
+    #	@author			Yuta Yoshinaga
     #	@date			2018.11.07
-        #
+    #
     ############################################################################
-        def getmAssist(self):
-            return self.__mAssist
+    def getmAssist(self):
+        return self.__mAssist
 
     ############################################################################
-        #	@brief			セッター
-        #	@fn				setmAssist(self, mAssist)
+    #	@brief			セッター
+    #	@fn				setmAssist(self, mAssist)
     #	@param[in]		self
-        #	@param[in]		mAssist
-        #	@return			ありません
-        #	@author			Yuta Yoshinaga
+    #	@param[in]		mAssist
+    #	@return			ありません
+    #	@author			Yuta Yoshinaga
     #	@date			2018.11.07
-        #
+    #
     ############################################################################
-        def setmAssist(self, mAssist):
-            self.__mAssist = mAssist
+    def setmAssist(self, mAssist):
+        self.__mAssist = mAssist
 
     ############################################################################
-        #	@brief			ゲッター
-        #	@fn				getmGameSpd(self)
+    #	@brief			ゲッター
+    #	@fn				getmGameSpd(self)
     #	@param[in]		self
-        #	@return			int mGameSpd
-        #	@author			Yuta Yoshinaga
+    #	@return			int mGameSpd
+    #	@author			Yuta Yoshinaga
     #	@date			2018.11.07
-        #
+    #
     ############################################################################
-        def getmGameSpd(self):
-            return self.__mGameSpd
+    def getmGameSpd(self):
+        return self.__mGameSpd
 
     ############################################################################
-        #	@brief			セッター
-        #	@fn				setmGameSpd(self, mGameSpd)
+    #	@brief			セッター
+    #	@fn				setmGameSpd(self, mGameSpd)
     #	@param[in]		self
-        #	@param[in]		mGameSpd
-        #	@return			ありません
-        #	@author			Yuta Yoshinaga
+    #	@param[in]		mGameSpd
+    #	@return			ありません
+    #	@author			Yuta Yoshinaga
     #	@date			2018.11.07
-        #
+    #
     ############################################################################
-        def setmGameSpd(self, mGameSpd):
-            self.__mGameSpd = mGameSpd
+    def setmGameSpd(self, mGameSpd):
+        self.__mGameSpd = mGameSpd
 
     ############################################################################
-        #	@brief			ゲッター
-        #	@fn				getmEndAnim(self)
+    #	@brief			ゲッター
+    #	@fn				getmEndAnim(self)
     #	@param[in]		self
-        #	@return			mEndAnim
-        #	@author			Yuta Yoshinaga
+    #	@return			mEndAnim
+    #	@author			Yuta Yoshinaga
     #	@date			2018.11.07
-        #
+    #
     ############################################################################
-        def getmEndAnim(self):
-            return self.__mEndAnim
+    def getmEndAnim(self):
+        return self.__mEndAnim
 
     ############################################################################
-        #	@brief			セッター
-        #	@fn				setmEndAnim(self, mEndAnim)
+    #	@brief			セッター
+    #	@fn				setmEndAnim(self, mEndAnim)
     #	@param[in]		self
-        #	@param[in]		mEndAnim
-        #	@return			ありません
-        #	@author			Yuta Yoshinaga
+    #	@param[in]		mEndAnim
+    #	@return			ありません
+    #	@author			Yuta Yoshinaga
     #	@date			2018.11.07
-        #
+    #
     ############################################################################
-        def setmEndAnim(self, mEndAnim):
-            self.__mEndAnim = mEndAnim
+    def setmEndAnim(self, mEndAnim):
+        self.__mEndAnim = mEndAnim
 
     ############################################################################
-        #	@brief			ゲッター
-        #	@fn				getmMasuCntMenu(self)
+    #	@brief			ゲッター
+    #	@fn				getmMasuCntMenu(self)
     #	@param[in]		self
-        #	@return			mMasuCntMenu
-        #	@author			Yuta Yoshinaga
+    #	@return			mMasuCntMenu
+    #	@author			Yuta Yoshinaga
     #	@date			2018.11.07
-        #
+    #
     ############################################################################
-        def getmMasuCntMenu(self):
-            return self.__mMasuCntMenu
+    def getmMasuCntMenu(self):
+        return self.__mMasuCntMenu
 
     ############################################################################
-        #	@brief			セッター
-        #	@fn				setmMasuCntMenu(self, mMasuCntMenu)
+    #	@brief			セッター
+    #	@fn				setmMasuCntMenu(self, mMasuCntMenu)
     #	@param[in]		self
-        #	@param[in]		mMasuCntMenu
-        #	@return			ありません
-        #	@author			Yuta Yoshinaga
+    #	@param[in]		mMasuCntMenu
+    #	@return			ありません
+    #	@author			Yuta Yoshinaga
     #	@date			2018.11.07
-        #
+    #
     ############################################################################
-        def setmMasuCntMenu(self, mMasuCntMenu):
-            self.__mMasuCntMenu = mMasuCntMenu
+    def setmMasuCntMenu(self, mMasuCntMenu):
+        self.__mMasuCntMenu = mMasuCntMenu
 
     ############################################################################
-        #	@brief			ゲッター
-        #	@fn				getmMasuCnt(self)
+    #	@brief			ゲッター
+    #	@fn				getmMasuCnt(self)
     #	@param[in]		self
-        #	@return			mMasuCnt
-        #	@author			Yuta Yoshinaga
+    #	@return			mMasuCnt
+    #	@author			Yuta Yoshinaga
     #	@date			2018.11.07
-        #
+    #
     ############################################################################
-        def getmMasuCnt(self):
-            return self.__mMasuCnt
+    def getmMasuCnt(self):
+        return self.__mMasuCnt
 
     ############################################################################
-        #	@brief			セッター
-        #	@fn				setmMasuCnt(self, mMasuCnt)
+    #	@brief			セッター
+    #	@fn				setmMasuCnt(self, mMasuCnt)
     #	@param[in]		self
-        #	@param[in]		mMasuCnt
-        #	@return			ありません
-        #	@author			Yuta Yoshinaga
+    #	@param[in]		mMasuCnt
+    #	@return			ありません
+    #	@author			Yuta Yoshinaga
     #	@date			2018.11.07
-        #
+    #
     ############################################################################
-        def setmMasuCnt(self, mMasuCnt):
-            self.__mMasuCnt = mMasuCnt
+    def setmMasuCnt(self, mMasuCnt):
+        self.__mMasuCnt = mMasuCnt
 
     ############################################################################
-        #	@brief			ゲッター
-        #	@fn				getmPlayCpuInterVal(self)
+    #	@brief			ゲッター
+    #	@fn				getmPlayCpuInterVal(self)
     #	@param[in]		self
-        #	@return			mPlayCpuInterVal
-        #	@author			Yuta Yoshinaga
+    #	@return			mPlayCpuInterVal
+    #	@author			Yuta Yoshinaga
     #	@date			2018.11.07
-        #
+    #
     ############################################################################
-        def getmPlayCpuInterVal(self):
-            return self.__mPlayCpuInterVal
+    def getmPlayCpuInterVal(self):
+        return self.__mPlayCpuInterVal
 
     ############################################################################
-        #	@brief			セッター
-        #	@fn				setmPlayCpuInterVal(self, mPlayCpuInterVal)
+    #	@brief			セッター
+    #	@fn				setmPlayCpuInterVal(self, mPlayCpuInterVal)
     #	@param[in]		self
-        #	@param[in]		mPlayCpuInterVal
-        #	@return			ありません
-        #	@author			Yuta Yoshinaga
+    #	@param[in]		mPlayCpuInterVal
+    #	@return			ありません
+    #	@author			Yuta Yoshinaga
     #	@date			2018.11.07
-        #
+    #
     ############################################################################
-        def setmPlayCpuInterVal(self, mPlayCpuInterVal):
-            self.__mPlayCpuInterVal = mPlayCpuInterVal
+    def setmPlayCpuInterVal(self, mPlayCpuInterVal):
+        self.__mPlayCpuInterVal = mPlayCpuInterVal
 
     ############################################################################
-        #	@brief			ゲッター
-        #	@fn				getmPlayDrawInterVal(self)
+    #	@brief			ゲッター
+    #	@fn				getmPlayDrawInterVal(self)
     #	@param[in]		self
-        #	@return			mPlayDrawInterVal
-        #	@author			Yuta Yoshinaga
+    #	@return			mPlayDrawInterVal
+    #	@author			Yuta Yoshinaga
     #	@date			2018.11.07
-        #
+    #
     ############################################################################
-        def getmPlayDrawInterVal(self):
-            return self.__mPlayDrawInterVal
+    def getmPlayDrawInterVal(self):
+        return self.__mPlayDrawInterVal
 
     ############################################################################
-        #	@brief			セッター
-        #	@fn				setmPlayDrawInterVal(self, mPlayDrawInterVal)
+    #	@brief			セッター
+    #	@fn				setmPlayDrawInterVal(self, mPlayDrawInterVal)
     #	@param[in]		self
-        #	@param[in]		mPlayDrawInterVal
-        #	@return			ありません
-        #	@author			Yuta Yoshinaga
+    #	@param[in]		mPlayDrawInterVal
+    #	@return			ありません
+    #	@author			Yuta Yoshinaga
     #	@date			2018.11.07
-        #
+    #
     ############################################################################
-        def setmPlayDrawInterVal(self, mPlayDrawInterVal):
-            self.__mPlayDrawInterVal = mPlayDrawInterVal
+    def setmPlayDrawInterVal(self, mPlayDrawInterVal):
+        self.__mPlayDrawInterVal = mPlayDrawInterVal
 
     ############################################################################
-        #	@brief			ゲッター
-        #	@fn				getmEndDrawInterVal(self)
+    #	@brief			ゲッター
+    #	@fn				getmEndDrawInterVal(self)
     #	@param[in]		self
-        #	@return			mEndDrawInterVal
-        #	@author			Yuta Yoshinaga
+    #	@return			mEndDrawInterVal
+    #	@author			Yuta Yoshinaga
     #	@date			2018.11.07
-        #
+    #
     ############################################################################
-        def getmEndDrawInterVal(self):
-            return self.__mEndDrawInterVal
+    def getmEndDrawInterVal(self):
+        return self.__mEndDrawInterVal
 
     ############################################################################
-        #	@brief			セッター
-        #	@fn				setmEndDrawInterVal(self, mEndDrawInterVal)
+    #	@brief			セッター
+    #	@fn				setmEndDrawInterVal(self, mEndDrawInterVal)
     #	@param[in]		self
-        #	@param[in]		mEndDrawInterVal
-        #	@return			ありません
-        #	@author			Yuta Yoshinaga
+    #	@param[in]		mEndDrawInterVal
+    #	@return			ありません
+    #	@author			Yuta Yoshinaga
     #	@date			2018.11.07
-        #
+    #
     ############################################################################
-        def setmEndDrawInterVal(self, mEndDrawInterVal):
-            self.__mEndDrawInterVal = mEndDrawInterVal
+    def setmEndDrawInterVal(self, mEndDrawInterVal):
+        self.__mEndDrawInterVal = mEndDrawInterVal
 
     ############################################################################
-        #	@brief			ゲッター
-        #	@fn				getmEndInterVal(self)
+    #	@brief			ゲッター
+    #	@fn				getmEndInterVal(self)
     #	@param[in]		self
-        #	@return			mEndInterVal
-        #	@author			Yuta Yoshinaga
+    #	@return			mEndInterVal
+    #	@author			Yuta Yoshinaga
     #	@date			2018.11.07
-        #
+    #
     ############################################################################
-        def getmEndInterVal(self):
-            return self.__mEndInterVal
+    def getmEndInterVal(self):
+        return self.__mEndInterVal
 
     ############################################################################
-        #	@brief			セッター
-        #	@fn				setmEndInterVal(self, mEndInterVal)
+    #	@brief			セッター
+    #	@fn				setmEndInterVal(self, mEndInterVal)
     #	@param[in]		self
-        #	@param[in]		mEndInterVal
-        #	@return			ありません
-        #	@author			Yuta Yoshinaga
+    #	@param[in]		mEndInterVal
+    #	@return			ありません
+    #	@author			Yuta Yoshinaga
     #	@date			2018.11.07
-        #
+    #
     ############################################################################
-        def setmEndInterVal(self, mEndInterVal):
-            self.__mEndInterVal = mEndInterVal
+    def setmEndInterVal(self, mEndInterVal):
+        self.__mEndInterVal = mEndInterVal
 
     ############################################################################
-        #	@brief			ゲッター
-        #	@fn				getmPlayerColor1(self)
+    #	@brief			ゲッター
+    #	@fn				getmPlayerColor1(self)
     #	@param[in]		self
-        #	@return			mPlayerColor1
-        #	@author			Yuta Yoshinaga
+    #	@return			mPlayerColor1
+    #	@author			Yuta Yoshinaga
     #	@date			2018.11.07
-        #
+    #
     ############################################################################
-        def getmPlayerColor1(self):
-            return self.__mPlayerColor1
+    def getmPlayerColor1(self):
+        return self.__mPlayerColor1
 
     ############################################################################
-        #	@brief			セッター
-        #	@fn				setmPlayerColor1(self, mPlayerColor1)
+    #	@brief			セッター
+    #	@fn				setmPlayerColor1(self, mPlayerColor1)
     #	@param[in]		self
-        #	@param[in]		mPlayerColor1
-        #	@return			ありません
-        #	@author			Yuta Yoshinaga
+    #	@param[in]		mPlayerColor1
+    #	@return			ありません
+    #	@author			Yuta Yoshinaga
     #	@date			2018.11.07
-        #
+    #
     ############################################################################
-        def setmPlayerColor1(self, mPlayerColor1):
-            self.__mPlayerColor1 = mPlayerColor1
+    def setmPlayerColor1(self, mPlayerColor1):
+        self.__mPlayerColor1 = mPlayerColor1
 
     ############################################################################
-        #	@brief			ゲッター
-        #	@fn				getmPlayerColor2(self)
+    #	@brief			ゲッター
+    #	@fn				getmPlayerColor2(self)
     #	@param[in]		self
-        #	@return			mPlayerColor2
-        #	@author			Yuta Yoshinaga
+    #	@return			mPlayerColor2
+    #	@author			Yuta Yoshinaga
     #	@date			2018.11.07
-        #
+    #
     ############################################################################
-        def getmPlayerColor2(self):
-            return self.__mPlayerColor2
+    def getmPlayerColor2(self):
+        return self.__mPlayerColor2
 
     ############################################################################
-        #	@brief			セッター
-        #	@fn				setmPlayerColor2(self, mPlayerColor2)
+    #	@brief			セッター
+    #	@fn				setmPlayerColor2(self, mPlayerColor2)
     #	@param[in]		self
-        #	@param[in]		mPlayerColor2
-        #	@return			ありません
-        #	@author			Yuta Yoshinaga
+    #	@param[in]		mPlayerColor2
+    #	@return			ありません
+    #	@author			Yuta Yoshinaga
     #	@date			2018.11.07
-        #
+    #
     ############################################################################
-        def setmPlayerColor2(self, mPlayerColor2):
-            self.__mPlayerColor2 = mPlayerColor2
+    def setmPlayerColor2(self, mPlayerColor2):
+        self.__mPlayerColor2 = mPlayerColor2
 
     ############################################################################
-        #	@brief			ゲッター
-        #	@fn				getmBackGroundColor(self)
+    #	@brief			ゲッター
+    #	@fn				getmBackGroundColor(self)
     #	@param[in]		self
-        #	@return			mBackGroundColor
-        #	@author			Yuta Yoshinaga
+    #	@return			mBackGroundColor
+    #	@author			Yuta Yoshinaga
     #	@date			2018.11.07
-        #
+    #
     ############################################################################
-        def getmBackGroundColor(self):
-            return self.__mBackGroundColor
+    def getmBackGroundColor(self):
+        return self.__mBackGroundColor
 
     ############################################################################
-        #	@brief			セッター
-        #	@fn				setmBackGroundColor(self, mBackGroundColor)
+    #	@brief			セッター
+    #	@fn				setmBackGroundColor(self, mBackGroundColor)
     #	@param[in]		self
-        #	@param[in]		mBackGroundColor
-        #	@return			ありません
-        #	@author			Yuta Yoshinaga
+    #	@param[in]		mBackGroundColor
+    #	@return			ありません
+    #	@author			Yuta Yoshinaga
     #	@date			2018.11.07
-        #
+    #
     ############################################################################
-        def setmBackGroundColor(self, mBackGroundColor):
-            self.__mBackGroundColor = mBackGroundColor
+    def setmBackGroundColor(self, mBackGroundColor):
+        self.__mBackGroundColor = mBackGroundColor
 
     ############################################################################
-        #	@brief			ゲッター
-        #	@fn				getmBorderColor(self)
+    #	@brief			ゲッター
+    #	@fn				getmBorderColor(self)
     #	@param[in]		self
-        #	@return			mBorderColor
-        #	@author			Yuta Yoshinaga
+    #	@return			mBorderColor
+    #	@author			Yuta Yoshinaga
     #	@date			2018.11.07
-        #
+    #
     ############################################################################
-        def getmBorderColor(self):
-            return self.__mBorderColor
+    def getmBorderColor(self):
+        return self.__mBorderColor
 
     ############################################################################
-        #	@brief			セッター
-        #	@fn				setmBorderColor(self, mBorderColor)
+    #	@brief			セッター
+    #	@fn				setmBorderColor(self, mBorderColor)
     #	@param[in]		self
-        #	@param[in]		mBorderColor
-        #	@return			ありません
-        #	@author			Yuta Yoshinaga
+    #	@param[in]		mBorderColor
+    #	@return			ありません
+    #	@author			Yuta Yoshinaga
     #	@date			2018.11.07
-        #
+    #
     ############################################################################
-        def setmBorderColor(self, mBorderColor):
-            self.__mBorderColor = mBorderColor
+    def setmBorderColor(self, mBorderColor):
+        self.__mBorderColor = mBorderColor
 
     ############################################################################
-        #	@brief			リセット
-        #	@fn				reset(self)
+    #	@brief			リセット
+    #	@fn				reset(self)
     #	@param[in]		self
-        #	@return			ありません
-        #	@author			Yuta Yoshinaga
+    #	@return			ありません
+    #	@author			Yuta Yoshinaga
     #	@date			2018.11.07
-        #
+    #
     ############################################################################
-        def reset(self):
-            self.__mMode = ReversiConst.DEF_MODE_ONE
-            self.__mType = ReversiConst.DEF_TYPE_HARD
-            self.__mPlayer = ReversiConst.REVERSI_STS_BLACK
-            self.__mAssist = ReversiConst.DEF_ASSIST_ON
-            self.__mGameSpd = ReversiConst.DEF_GAME_SPD_MID
-            self.__mEndAnim = ReversiConst.DEF_END_ANIM_ON
-            self.__mMasuCntMenu = ReversiConst.DEF_MASU_CNT_8
-            self.__mMasuCnt = ReversiConst.DEF_MASU_CNT_8_VAL
-            self.__mPlayCpuInterVal = ReversiConst.DEF_GAME_SPD_MID_VAL2
-            self.__mPlayDrawInterVal = ReversiConst.DEF_GAME_SPD_MID_VAL
-            self.__mEndDrawInterVal = 100
-            self.__mEndInterVal = 500
-            self.__mPlayerColor1 = "#000000"
-            self.__mPlayerColor2 = "#FFFFFF"
-            self.__mBackGroundColor = "#00FF00"
-            self.__mBorderColor = "#000000"
+    def reset(self):
+        self.__mMode = ReversiConst.ReversiConst.DEF_MODE_ONE
+        self.__mType = ReversiConst.ReversiConst.DEF_TYPE_HARD
+        self.__mPlayer = ReversiConst.ReversiConst.REVERSI_STS_BLACK
+        self.__mAssist = ReversiConst.ReversiConst.DEF_ASSIST_ON
+        self.__mGameSpd = ReversiConst.ReversiConst.DEF_GAME_SPD_MID
+        self.__mEndAnim = ReversiConst.ReversiConst.DEF_END_ANIM_ON
+        self.__mMasuCntMenu = ReversiConst.ReversiConst.DEF_MASU_CNT_8
+        self.__mMasuCnt = ReversiConst.ReversiConst.DEF_MASU_CNT_8_VAL
+        self.__mPlayCpuInterVal = ReversiConst.ReversiConst.DEF_GAME_SPD_MID_VAL2
+        self.__mPlayDrawInterVal = ReversiConst.ReversiConst.DEF_GAME_SPD_MID_VAL
+        self.__mEndDrawInterVal = 100
+        self.__mEndInterVal = 500
+        self.__mPlayerColor1 = "#000000"
+        self.__mPlayerColor2 = "#FFFFFF"
+        self.__mBackGroundColor = "#00FF00"
+        self.__mBorderColor = "#000000"
 
-        mMode = property(getmMode, setmMode) # !< 現在のモード
-        mType = property(getmType, setmType) # !< 現在のタイプ
-        mPlayer = property(getmPlayer, setmPlayer) # !< プレイヤーの色
-        mAssist = property(getmAssist, setmAssist) # !< アシスト
-        mGameSpd = property(getmGameSpd, setmGameSpd) # !< ゲームスピード
-        mEndAnim = property(getmEndAnim, setmEndAnim) # !< ゲーム終了アニメーション
-        mMasuCntMenu = property(getmMasuCntMenu, setmMasuCntMenu) # !< マスの数
-        mMasuCnt = property(getmMasuCnt, setmMasuCnt) # !< マスの数
-        mPlayCpuInterVal = property(getmPlayCpuInterVal, setmPlayCpuInterVal) # !< CPU対戦時のインターバル(msec)
-        mPlayDrawInterVal = property(getmPlayDrawInterVal, setmPlayDrawInterVal) # !< 描画のインターバル(msec)
-        mEndDrawInterVal = property(getmEndDrawInterVal, setmEndDrawInterVal) # !< 終了アニメーション描画のインターバル(msec)
-        mEndInterVal = property(getmEndInterVal, setmEndInterVal) # !< 終了アニメーションのインターバル(msec)
-        mPlayerColor1 = property(getmPlayerColor1, setmPlayerColor1) # !< プレイヤー1の色
-        mPlayerColor2 = property(getmPlayerColor2, setmPlayerColor2) # !< プレイヤー2の色
-        mBackGroundColor = property(getmBackGroundColor, setmBackGroundColor) # !< 背景の色
-        mBorderColor = property(getmBorderColor, setmBorderColor) # !< 枠線の色
+    mMode = property(getmMode, setmMode)  # !< 現在のモード
+    mType = property(getmType, setmType)  # !< 現在のタイプ
+    mPlayer = property(getmPlayer, setmPlayer)  # !< プレイヤーの色
+    mAssist = property(getmAssist, setmAssist)  # !< アシスト
+    mGameSpd = property(getmGameSpd, setmGameSpd)  # !< ゲームスピード
+    mEndAnim = property(getmEndAnim, setmEndAnim)  # !< ゲーム終了アニメーション
+    mMasuCntMenu = property(getmMasuCntMenu, setmMasuCntMenu)  # !< マスの数
+    mMasuCnt = property(getmMasuCnt, setmMasuCnt)  # !< マスの数
+    mPlayCpuInterVal = property(getmPlayCpuInterVal, setmPlayCpuInterVal)  # !< CPU対戦時のインターバル(msec)
+    mPlayDrawInterVal = property(getmPlayDrawInterVal, setmPlayDrawInterVal)  # !< 描画のインターバル(msec)
+    mEndDrawInterVal = property(getmEndDrawInterVal, setmEndDrawInterVal) # !< 終了アニメーション描画のインターバル(msec)
+    mEndInterVal = property(getmEndInterVal, setmEndInterVal) # !< 終了アニメーションのインターバル(msec)
+    mPlayerColor1 = property(getmPlayerColor1, setmPlayerColor1)  # !< プレイヤー1の色
+    mPlayerColor2 = property(getmPlayerColor2, setmPlayerColor2)  # !< プレイヤー2の色
+    mBackGroundColor = property(getmBackGroundColor, setmBackGroundColor)  # !< 背景の色
+    mBorderColor = property(getmBorderColor, setmBorderColor)  # !< 枠線の色

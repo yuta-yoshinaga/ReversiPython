@@ -27,6 +27,7 @@ class ReversiAnz:
     ############################################################################
     #	@brief			コンストラクタ
     #	@fn				__init__(self)
+    #	@param[in]		self
     #	@return			ありません
     #	@author			Yuta Yoshinaga
     #	@date			2018.11.06
@@ -38,6 +39,7 @@ class ReversiAnz:
     ############################################################################
     #	@brief			ゲッター
     #	@fn				getMin(self)
+    #	@param[in]		self
     #	@return			min
     #	@author			Yuta Yoshinaga
     #	@date			2018.11.06
@@ -49,6 +51,7 @@ class ReversiAnz:
     ############################################################################
     #	@brief			セッター
     #	@fn				setMin(self, min)
+    #	@param[in]		self
     #	@param[in]		min
     #	@return			ありません
     #	@author			Yuta Yoshinaga
@@ -61,6 +64,7 @@ class ReversiAnz:
     ############################################################################
     #	@brief			ゲッター
     #	@fn				getMax(self)
+    #	@param[in]		self
     #	@return			max
     #	@author			Yuta Yoshinaga
     #	@date			2018.11.06
@@ -72,6 +76,7 @@ class ReversiAnz:
     ############################################################################
     #	@brief			セッター
     #	@fn				setMax(self, max)
+    #	@param[in]		self
     #	@param[in]		max
     #	@return			ありません
     #	@author			Yuta Yoshinaga
@@ -84,6 +89,7 @@ class ReversiAnz:
     ############################################################################
     #	@brief			ゲッター
     #	@fn				getAvg(self)
+    #	@param[in]		self
     #	@return			avg
     #	@author			Yuta Yoshinaga
     #	@date			2018.11.06
@@ -95,6 +101,7 @@ class ReversiAnz:
     ############################################################################
     #	@brief			セッター
     #	@fn				setAvg(self, avg)
+    #	@param[in]		self
     #	@param[in]		avg
     #	@return			ありません
     #	@author			Yuta Yoshinaga
@@ -107,6 +114,7 @@ class ReversiAnz:
     ############################################################################
     #	@brief			ゲッター
     #	@fn				getPointCnt(self)
+    #	@param[in]		self
     #	@return			pointCnt
     #	@author			Yuta Yoshinaga
     #	@date			2018.11.06
@@ -118,6 +126,7 @@ class ReversiAnz:
     ############################################################################
     #	@brief			セッター
     #	@fn				setPointCnt(self, pointCnt)
+    #	@param[in]		self
     #	@param[in]		pointCnt
     #	@return			ありません
     #	@author			Yuta Yoshinaga
@@ -130,6 +139,7 @@ class ReversiAnz:
     ############################################################################
     #	@brief			ゲッター
     #	@fn				getEdgeCnt(self)
+    #	@param[in]		self
     #	@return			edgeCnt
     #	@author			Yuta Yoshinaga
     #	@date			2018.11.06
@@ -141,6 +151,7 @@ class ReversiAnz:
     ############################################################################
     #	@brief			セッター
     #	@fn				setEdgeCnt(self, edgeCnt)
+    #	@param[in]		self
     #	@param[in]		edgeCnt
     #	@return			ありません
     #	@author			Yuta Yoshinaga
@@ -153,6 +164,7 @@ class ReversiAnz:
     ############################################################################
     #	@brief			ゲッター
     #	@fn				getEdgeSideOneCnt(self)
+    #	@param[in]		self
     #	@return			edgeSideOneCnt
     #	@author			Yuta Yoshinaga
     #	@date			2018.11.06
@@ -164,6 +176,7 @@ class ReversiAnz:
     ############################################################################
     #	@brief			セッター
     #	@fn				setEdgeSideOneCnt(self, edgeSideOneCnt)
+    #	@param[in]		self
     #	@param[in]		edgeSideOneCnt
     #	@return			ありません
     #	@author			Yuta Yoshinaga
@@ -176,6 +189,7 @@ class ReversiAnz:
     ############################################################################
     #	@brief			ゲッター
     #	@fn				getEdgeSideTwoCnt(self)
+    #	@param[in]		self
     #	@return			edgeSideTwoCnt
     #	@author			Yuta Yoshinaga
     #	@date			2018.11.06
@@ -187,6 +201,7 @@ class ReversiAnz:
     ############################################################################
     #	@brief			セッター
     #	@fn				setEdgeSideTwoCnt(self, edgeSideTwoCnt)
+    #	@param[in]		self
     #	@param[in]		edgeSideTwoCnt
     #	@return			ありません
     #	@author			Yuta Yoshinaga
@@ -199,6 +214,7 @@ class ReversiAnz:
     ############################################################################
     #	@brief			ゲッター
     #	@fn				getEdgeSideThreeCnt()
+    #	@param[in]		self
     #	@return			edgeSideThreeCnt
     #	@author			Yuta Yoshinaga
     #	@date			2018.11.06
@@ -210,6 +226,7 @@ class ReversiAnz:
     ############################################################################
     #	@brief			セッター
     #	@fn				setEdgeSideThreeCnt(self, edgeSideThreeCnt)
+    #	@param[in]		self
     #	@param[in]		edgeSideThreeCnt
     #	@return			ありません
     #	@author			Yuta Yoshinaga
@@ -222,6 +239,7 @@ class ReversiAnz:
     ############################################################################
     #	@brief			ゲッター
     #	@fn				getEdgeSideOtherCnt(self)
+    #	@param[in]		self
     #	@return			edgeSideOtherCnt
     #	@author			Yuta Yoshinaga
     #	@date			2018.11.06
@@ -233,6 +251,7 @@ class ReversiAnz:
     ############################################################################
     #	@brief			セッター
     #	@fn				setEdgeSideOtherCnt(self, edgeSideOtherCnt)
+    #	@param[in]		self
     #	@param[in]		edgeSideOtherCnt
     #	@return			ありません
     #	@author			Yuta Yoshinaga
@@ -245,6 +264,7 @@ class ReversiAnz:
     ############################################################################
     #	@brief			ゲッター
     #	@fn				getOwnMin(self)
+    #	@param[in]		self
     #	@return			ownMin
     #	@author			Yuta Yoshinaga
     #	@date			2018.11.06
@@ -256,6 +276,7 @@ class ReversiAnz:
     ############################################################################
     #	@brief			セッター
     #	@fn				setOwnMin(self, ownMin)
+    #	@param[in]		self
     #	@param[in]		ownMin
     #	@return			ありません
     #	@author			Yuta Yoshinaga
@@ -268,6 +289,7 @@ class ReversiAnz:
     ############################################################################
     #	@brief			ゲッター
     #	@fn				getOwnMax(self)
+    #	@param[in]		self
     #	@return			ownMax
     #	@author			Yuta Yoshinaga
     #	@date			2018.11.06
@@ -279,6 +301,7 @@ class ReversiAnz:
     ############################################################################
     #	@brief			セッター
     #	@fn				setOwnMax(self, ownMax)
+    #	@param[in]		self
     #	@param[in]		ownMax
     #	@return			ありません
     #	@author			Yuta Yoshinaga
@@ -291,6 +314,7 @@ class ReversiAnz:
     ############################################################################
     #	@brief			ゲッター
     #	@fn				getOwnAvg(self)
+    #	@param[in]		self
     #	@return			ownAvg
     #	@author			Yuta Yoshinaga
     #	@date			2018.11.06
@@ -302,6 +326,7 @@ class ReversiAnz:
     ############################################################################
     #	@brief			セッター
     #	@fn				setOwnAvg(self, ownAvg)
+    #	@param[in]		self
     #	@param[in]		ownAvg
     #	@return			ありません
     #	@author			Yuta Yoshinaga
@@ -314,6 +339,7 @@ class ReversiAnz:
     ############################################################################
     #	@brief			ゲッター
     #	@fn				getOwnPointCnt(self)
+    #	@param[in]		self
     #	@return			ownPointCnt
     #	@author			Yuta Yoshinaga
     #	@date			2018.11.06
@@ -325,6 +351,7 @@ class ReversiAnz:
     ############################################################################
     #	@brief			セッター
     #	@fn				setOwnPointCnt(self, ownPointCnt)
+    #	@param[in]		self
     #	@param[in]		ownPointCnt
     #	@return			ありません
     #	@author			Yuta Yoshinaga
@@ -337,6 +364,7 @@ class ReversiAnz:
     ############################################################################
     #	@brief			ゲッター
     #	@fn				getOwnEdgeCnt(self)
+    #	@param[in]		self
     #	@return			ownEdgeCnt
     #	@author			Yuta Yoshinaga
     #	@date			2018.11.06
@@ -348,6 +376,7 @@ class ReversiAnz:
     ############################################################################
     #	@brief			セッター
     #	@fn				setOwnEdgeCnt(self, ownEdgeCnt)
+    #	@param[in]		self
     #	@param[in]		ownEdgeCnt
     #	@return			ありません
     #	@author			Yuta Yoshinaga
@@ -360,6 +389,7 @@ class ReversiAnz:
     ############################################################################
     #	@brief			ゲッター
     #	@fn				getOwnEdgeSideOneCnt(self)
+    #	@param[in]		self
     #	@return			ownEdgeSideOneCnt
     #	@author			Yuta Yoshinaga
     #	@date			2018.11.06
@@ -371,6 +401,7 @@ class ReversiAnz:
     ############################################################################
     #	@brief			セッター
     #	@fn				setOwnEdgeSideOneCnt(self, ownEdgeSideOneCnt)
+    #	@param[in]		self
     #	@param[in]		ownEdgeSideOneCnt
     #	@return			ありません
     #	@author			Yuta Yoshinaga
@@ -383,6 +414,7 @@ class ReversiAnz:
     ############################################################################
     #	@brief			ゲッター
     #	@fn				getOwnEdgeSideTwoCnt(self)
+    #	@param[in]		self
     #	@return			ownEdgeSideTwoCnt
     #	@author			Yuta Yoshinaga
     #	@date			2018.11.06
@@ -394,6 +426,7 @@ class ReversiAnz:
     ############################################################################
     #	@brief			セッター
     #	@fn				setOwnEdgeSideTwoCnt(self, ownEdgeSideTwoCnt)
+    #	@param[in]		self
     #	@param[in]		ownEdgeSideTwoCnt
     #	@return			ありません
     #	@author			Yuta Yoshinaga
@@ -406,6 +439,7 @@ class ReversiAnz:
     ############################################################################
     #	@brief			ゲッター
     #	@fn				getOwnEdgeSideThreeCnt(self)
+    #	@param[in]		self
     #	@return			ownEdgeSideThreeCnt
     #	@author			Yuta Yoshinaga
     #	@date			2018.11.06
@@ -417,6 +451,7 @@ class ReversiAnz:
     ############################################################################
     #	@brief			セッター
     #	@fn				setOwnEdgeSideThreeCnt(self, ownEdgeSideThreeCnt)
+    #	@param[in]		self
     #	@param[in]		ownEdgeSideThreeCnt
     #	@return			ありません
     #	@author			Yuta Yoshinaga
@@ -429,6 +464,7 @@ class ReversiAnz:
     ############################################################################
     #	@brief			ゲッター
     #	@fn				getOwnEdgeSideOtherCnt(self)
+    #	@param[in]		self
     #	@return			ownEdgeSideOtherCnt
     #	@author			Yuta Yoshinaga
     #	@date			2018.11.06
@@ -440,6 +476,7 @@ class ReversiAnz:
     ############################################################################
     #	@brief			セッター
     #	@fn				setOwnEdgeSideOtherCnt(self, ownEdgeSideOtherCnt)
+    #	@param[in]		self
     #	@param[in]		ownEdgeSideOtherCnt
     #	@return			ありません
     #	@author			Yuta Yoshinaga
@@ -452,6 +489,7 @@ class ReversiAnz:
     ############################################################################
     #	@brief			ゲッター
     #	@fn				getBadPoint(self)
+    #	@param[in]		self
     #	@return			badPoint
     #	@author			Yuta Yoshinaga
     #	@date			2018.11.06
@@ -463,6 +501,7 @@ class ReversiAnz:
     ############################################################################
     #	@brief			セッター
     #	@fn				setBadPoint(self, badPoint)
+    #	@param[in]		self
     #	@param[in]		badPoint
     #	@return			ありません
     #	@author			Yuta Yoshinaga
@@ -475,6 +514,7 @@ class ReversiAnz:
     ############################################################################
     #	@brief			ゲッター
     #	@fn				getGoodPoint(self)
+    #	@param[in]		self
     #	@return			goodPoint
     #	@author			Yuta Yoshinaga
     #	@date			2018.11.06
@@ -486,6 +526,7 @@ class ReversiAnz:
     ############################################################################
     #	@brief			セッター
     #	@fn				setGoodPoint(self, goodPoint)
+    #	@param[in]		self
     #	@param[in]		goodPoint
     #	@return			ありません
     #	@author			Yuta Yoshinaga
@@ -498,6 +539,7 @@ class ReversiAnz:
     ############################################################################
     #	@brief			リセット
     #	@fn				reset(self)
+    #	@param[in]		self
     #	@return			ありません
     #	@author			Yuta Yoshinaga
     #	@date			2018.11.06

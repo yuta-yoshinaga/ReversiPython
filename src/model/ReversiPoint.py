@@ -27,6 +27,7 @@ class ReversiPoint:
     ############################################################################
     #	@brief			コンストラクタ
     #	@fn				__init__(self)
+    #	@param[in]		self
     #	@return			ありません
     #	@author			Yuta Yoshinaga
     #	@date			2018.11.06
