@@ -460,10 +460,10 @@ class ReversiSetting:
         self.__mPlayDrawInterVal = ReversiConst.ReversiConst.DEF_GAME_SPD_MID_VAL
         self.__mEndDrawInterVal = 100
         self.__mEndInterVal = 500
-        self.__mPlayerColor1 = "#000000"
-        self.__mPlayerColor2 = "#FFFFFF"
-        self.__mBackGroundColor = "#00FF00"
-        self.__mBorderColor = "#000000"
+        self.__mPlayerColor1 = '#000000'
+        self.__mPlayerColor2 = '#FFFFFF'
+        self.__mBackGroundColor = '#00FF00'
+        self.__mBorderColor = '#000000'
 
     mMode = property(getmMode, setmMode)  # !< 現在のモード
     mType = property(getmType, setmType)  # !< 現在のタイプ

@@ -179,7 +179,48 @@ class ReversiAnzTest:
 
     def test_case21(self):
         self.tgt.reset()
-        if self.tgt.min == 0 and self.tgt.max == 0 and self.tgt.avg == 0.0 and self.tgt.pointCnt == 0 and self.tgt.edgeCnt == 0 and self.tgt.edgeSideOneCnt == 0 and self.tgt.edgeSideTwoCnt == 0 and self.tgt.edgeSideThreeCnt == 0 and self.tgt.edgeSideOtherCnt == 0 and self.tgt.ownMin == 0 and self.tgt.ownMax == 0 and self.tgt.ownAvg == 0.0 and self.tgt.ownPointCnt == 0 and self.tgt.ownEdgeCnt == 0 and self.tgt.ownEdgeSideOneCnt == 0 and self.tgt.ownEdgeSideTwoCnt == 0 and self.tgt.ownEdgeSideThreeCnt == 0 and self.tgt.ownEdgeSideOtherCnt == 0 and self.tgt.badPoint == 0 and self.tgt.goodPoint == 0:
+        self.error = False
+        if self.tgt.min != 0:
+            self.error = True
+        if self.tgt.max != 0:
+            self.error = True
+        if self.tgt.avg != 0.0:
+            self.error = True
+        if self.tgt.pointCnt != 0:
+            self.error = True
+        if self.tgt.edgeCnt != 0:
+            self.error = True
+        if self.tgt.edgeSideOneCnt != 0:
+            self.error = True
+        if self.tgt.edgeSideTwoCnt != 0:
+            self.error = True
+        if self.tgt.edgeSideThreeCnt != 0:
+            self.error = True
+        if self.tgt.edgeSideOtherCnt != 0:
+            self.error = True
+        if self.tgt.ownMin != 0:
+            self.error = True
+        if self.tgt.ownMax != 0:
+            self.error = True
+        if self.tgt.ownAvg != 0.0:
+            self.error = True
+        if self.tgt.ownPointCnt != 0:
+            self.error = True
+        if self.tgt.ownEdgeCnt != 0:
+            self.error = True
+        if self.tgt.ownEdgeSideOneCnt != 0:
+            self.error = True
+        if self.tgt.ownEdgeSideTwoCnt != 0:
+            self.error = True
+        if self.tgt.ownEdgeSideThreeCnt != 0:
+            self.error = True
+        if self.tgt.ownEdgeSideOtherCnt != 0:
+            self.error = True
+        if self.tgt.badPoint != 0:
+            self.error = True
+        if self.tgt.goodPoint != 0:
+            self.error = True
+        if self.error == False:
             print("TEST CASE21 OK")
         else:
             print("TEST CASE21 NG")
