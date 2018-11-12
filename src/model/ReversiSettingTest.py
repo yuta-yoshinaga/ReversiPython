@@ -43,112 +43,112 @@ class ReversiSettingTest:
         if self.tgt.mMode == 1:
             print("TEST CASE1 OK")
         else:
-            print("TEST CASE1 NG")
+            print("TEST CASE1 NG " + str(self.tgt.mMode))
 
     def test_case2(self):
         self.tgt.mType = 1
         if self.tgt.mType == 1:
             print("TEST CASE2 OK")
         else:
-            print("TEST CASE2 NG")
+            print("TEST CASE2 NG " + str(self.tgt.mType))
 
     def test_case3(self):
         self.tgt.mPlayer = 1
         if self.tgt.mPlayer == 1:
             print("TEST CASE3 OK")
         else:
-            print("TEST CASE3 NG")
+            print("TEST CASE3 NG " + str(self.tgt.mPlayer))
 
     def test_case4(self):
         self.tgt.mAssist = 1
         if self.tgt.mAssist == 1:
             print("TEST CASE4 OK")
         else:
-            print("TEST CASE4 NG")
+            print("TEST CASE4 NG " + str(self.tgt.mAssist))
 
     def test_case5(self):
         self.tgt.mGameSpd = 1
         if self.tgt.mGameSpd == 1:
             print("TEST CASE5 OK")
         else:
-            print("TEST CASE5 NG")
+            print("TEST CASE5 NG " + str(self.tgt.mGameSpd))
 
     def test_case6(self):
         self.tgt.mEndAnim = 1
         if self.tgt.mEndAnim == 1:
             print("TEST CASE6 OK")
         else:
-            print("TEST CASE6 NG")
+            print("TEST CASE6 NG " + str(self.tgt.mEndAnim))
 
     def test_case7(self):
         self.tgt.mMasuCntMenu = 1
         if self.tgt.mMasuCntMenu == 1:
             print("TEST CASE7 OK")
         else:
-            print("TEST CASE7 NG")
+            print("TEST CASE7 NG " + str(self.tgt.mMasuCntMenu))
 
     def test_case8(self):
         self.tgt.mMasuCnt = 1
         if self.tgt.mMasuCnt == 1:
             print("TEST CASE8 OK")
         else:
-            print("TEST CASE8 NG")
+            print("TEST CASE8 NG " + str(self.tgt.mMasuCnt))
 
     def test_case9(self):
         self.tgt.mPlayCpuInterVal = 1
         if self.tgt.mPlayCpuInterVal == 1:
             print("TEST CASE9 OK")
         else:
-            print("TEST CASE9 NG")
+            print("TEST CASE9 NG " + str(self.tgt.mPlayCpuInterVal))
 
     def test_case10(self):
         self.tgt.mPlayDrawInterVal = 1
         if self.tgt.mPlayDrawInterVal == 1:
             print("TEST CASE10 OK")
         else:
-            print("TEST CASE10 NG")
+            print("TEST CASE10 NG " + str(self.tgt.mPlayDrawInterVal))
 
     def test_case11(self):
         self.tgt.mEndDrawInterVal = 1
         if self.tgt.mEndDrawInterVal == 1:
             print("TEST CASE11 OK")
         else:
-            print("TEST CASE11 NG")
+            print("TEST CASE11 NG " + str(self.tgt.mEndDrawInterVal))
 
     def test_case12(self):
         self.tgt.mEndInterVal = 1
         if self.tgt.mEndInterVal == 1:
             print("TEST CASE12 OK")
         else:
-            print("TEST CASE12 NG")
+            print("TEST CASE12 NG " + str(self.tgt.mEndInterVal))
 
     def test_case13(self):
         self.tgt.mPlayerColor1 = '#FFFFFF'
         if self.tgt.mPlayerColor1 == '#FFFFFF':
             print("TEST CASE13 OK")
         else:
-            print("TEST CASE13 NG")
+            print("TEST CASE13 NG " + str(self.tgt.mPlayerColor1))
 
     def test_case14(self):
         self.tgt.mPlayerColor2 = '#000000'
         if self.tgt.mPlayerColor2 == '#000000':
             print("TEST CASE14 OK")
         else:
-            print("TEST CASE14 NG")
+            print("TEST CASE14 NG " + str(self.tgt.mPlayerColor2))
 
     def test_case15(self):
         self.tgt.mBackGroundColor = '#FFFFFF'
         if self.tgt.mBackGroundColor == '#FFFFFF':
             print("TEST CASE15 OK")
         else:
-            print("TEST CASE15 NG")
+            print("TEST CASE15 NG " + str(self.tgt.mBackGroundColor))
 
     def test_case16(self):
         self.tgt.mBorderColor = '#FFFFFF'
         if self.tgt.mBorderColor == '#FFFFFF':
             print("TEST CASE16 OK")
         else:
-            print("TEST CASE16 NG")
+            print("TEST CASE16 NG " + str(self.tgt.mBorderColor))
 
     def test_case17(self):
         self.tgt.reset()

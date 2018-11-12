@@ -42,7 +42,7 @@ class ReversiHistoryTest:
         if self.tgt.color == 1:
             print("TEST CASE1 OK")
         else:
-            print("TEST CASE1 NG")
+            print("TEST CASE1 NG " + str(self.tgt.color))
 
     def test_case2(self):
         self.tgt.point.x = 1
@@ -50,14 +50,16 @@ class ReversiHistoryTest:
         if self.tgt.point.x == 1 and self.tgt.point.y == 2:
             print("TEST CASE2 OK")
         else:
-            print("TEST CASE2 NG")
+            print("TEST CASE2 NG " + str(self.tgt.point.x) +
+                  " " + str(self.tgt.point.y))
 
     def test_case3(self):
         self.tgt.reset()
         if self.tgt.color == -1 and self.tgt.point.x == -1 and self.tgt.point.y == -1:
             print("TEST CASE3 OK")
         else:
-            print("TEST CASE3 NG")
+            print("TEST CASE3 NG " + str(self.tgt.color) + " " +
+                  str(self.tgt.point.x) + " " + str(self.tgt.point.y))
 
 
 obj = ReversiHistoryTest()

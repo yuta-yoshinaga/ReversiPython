@@ -42,140 +42,140 @@ class ReversiAnzTest:
         if self.tgt.min == 1:
             print("TEST CASE1 OK")
         else:
-            print("TEST CASE1 NG")
+            print("TEST CASE1 NG " + str(self.tgt.min))
 
     def test_case2(self):
         self.tgt.max = 1
         if self.tgt.max == 1:
             print("TEST CASE2 OK")
         else:
-            print("TEST CASE2 NG")
+            print("TEST CASE2 NG " + str(self.tgt.max))
 
     def test_case3(self):
         self.tgt.avg = 1.1
         if self.tgt.avg == 1.1:
             print("TEST CASE3 OK")
         else:
-            print("TEST CASE3 NG")
+            print("TEST CASE3 NG " + str(self.tgt.avg))
 
     def test_case4(self):
         self.tgt.pointCnt = 1
         if self.tgt.pointCnt == 1:
             print("TEST CASE4 OK")
         else:
-            print("TEST CASE4 NG")
+            print("TEST CASE4 NG " + str(self.tgt.pointCnt))
 
     def test_case5(self):
         self.tgt.edgeCnt = 1
         if self.tgt.edgeCnt == 1:
             print("TEST CASE5 OK")
         else:
-            print("TEST CASE5 NG")
+            print("TEST CASE5 NG " + str(self.tgt.edgeCnt))
 
     def test_case6(self):
         self.tgt.edgeSideOneCnt = 1
         if self.tgt.edgeSideOneCnt == 1:
             print("TEST CASE6 OK")
         else:
-            print("TEST CASE6 NG")
+            print("TEST CASE6 NG " + str(self.tgt.edgeSideOneCnt))
 
     def test_case7(self):
         self.tgt.edgeSideTwoCnt = 1
         if self.tgt.edgeSideTwoCnt == 1:
             print("TEST CASE7 OK")
         else:
-            print("TEST CASE7 NG")
+            print("TEST CASE7 NG " + str(self.tgt.edgeSideTwoCnt))
 
     def test_case8(self):
         self.tgt.edgeSideThreeCnt = 1
         if self.tgt.edgeSideThreeCnt == 1:
             print("TEST CASE8 OK")
         else:
-            print("TEST CASE8 NG")
+            print("TEST CASE8 NG " + str(self.tgt.edgeSideThreeCnt))
 
     def test_case9(self):
         self.tgt.edgeSideOtherCnt = 1
         if self.tgt.edgeSideOtherCnt == 1:
             print("TEST CASE9 OK")
         else:
-            print("TEST CASE9 NG")
+            print("TEST CASE9 NG " + str(self.tgt.edgeSideOtherCnt))
 
     def test_case10(self):
         self.tgt.ownMin = 1
         if self.tgt.ownMin == 1:
             print("TEST CASE10 OK")
         else:
-            print("TEST CASE10 NG")
+            print("TEST CASE10 NG " + str(self.tgt.ownMin))
 
     def test_case11(self):
         self.tgt.ownMax = 1
         if self.tgt.ownMax == 1:
             print("TEST CASE11 OK")
         else:
-            print("TEST CASE11 NG")
+            print("TEST CASE11 NG " + str(self.tgt.ownMax))
 
     def test_case12(self):
         self.tgt.ownAvg = 1.1
         if self.tgt.ownAvg == 1.1:
             print("TEST CASE12 OK")
         else:
-            print("TEST CASE12 NG")
+            print("TEST CASE12 NG " + str(self.tgt.ownAvg))
 
     def test_case13(self):
         self.tgt.ownPointCnt = 1
         if self.tgt.ownPointCnt == 1:
             print("TEST CASE13 OK")
         else:
-            print("TEST CASE13 NG")
+            print("TEST CASE13 NG " + str(self.tgt.ownPointCnt))
 
     def test_case14(self):
         self.tgt.ownEdgeCnt = 1
         if self.tgt.ownEdgeCnt == 1:
             print("TEST CASE14 OK")
         else:
-            print("TEST CASE14 NG")
+            print("TEST CASE14 NG " + str(self.tgt.ownEdgeCnt))
 
     def test_case15(self):
         self.tgt.ownEdgeSideOneCnt = 1
         if self.tgt.ownEdgeSideOneCnt == 1:
             print("TEST CASE15 OK")
         else:
-            print("TEST CASE15 NG")
+            print("TEST CASE15 NG " + str(self.tgt.ownEdgeSideOneCnt))
 
     def test_case16(self):
         self.tgt.ownEdgeSideTwoCnt = 1
         if self.tgt.ownEdgeSideTwoCnt == 1:
             print("TEST CASE16 OK")
         else:
-            print("TEST CASE16 NG")
+            print("TEST CASE16 NG " + str(self.tgt.ownEdgeSideTwoCnt))
 
     def test_case17(self):
         self.tgt.ownEdgeSideThreeCnt = 1
         if self.tgt.ownEdgeSideThreeCnt == 1:
             print("TEST CASE17 OK")
         else:
-            print("TEST CASE17 NG")
+            print("TEST CASE17 NG " + str(self.tgt.ownEdgeSideThreeCnt))
 
     def test_case18(self):
         self.tgt.ownEdgeSideOtherCnt = 1
         if self.tgt.ownEdgeSideOtherCnt == 1:
             print("TEST CASE18 OK")
         else:
-            print("TEST CASE18 NG")
+            print("TEST CASE18 NG " + str(self.tgt.ownEdgeSideOtherCnt))
 
     def test_case19(self):
         self.tgt.badPoint = 1
         if self.tgt.badPoint == 1:
             print("TEST CASE19 OK")
         else:
-            print("TEST CASE19 NG")
+            print("TEST CASE19 NG " + str(self.tgt.badPoint))
 
     def test_case20(self):
         self.tgt.goodPoint = 1
         if self.tgt.goodPoint == 1:
             print("TEST CASE20 OK")
         else:
-            print("TEST CASE20 NG")
+            print("TEST CASE20 NG " + str(self.tgt.goodPoint))
 
     def test_case21(self):
         self.tgt.reset()

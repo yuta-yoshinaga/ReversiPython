@@ -42,14 +42,14 @@ class ReversiPointTest:
         if self.tgt.x == 1:
             print("TEST CASE1 OK")
         else:
-            print("TEST CASE1 NG")
+            print("TEST CASE1 NG " + str(self.tgt.x))
 
     def test_case2(self):
         self.tgt.y = 1
         if self.tgt.y == 1:
             print("TEST CASE2 OK")
         else:
-            print("TEST CASE2 NG")
+            print("TEST CASE2 NG " + str(self.tgt.y))
 
 
 obj = ReversiPointTest()
