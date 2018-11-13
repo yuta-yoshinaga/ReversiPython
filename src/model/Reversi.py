@@ -16,10 +16,10 @@
 ################################################################################
 
 import copy
-import ReversiAnz
-import ReversiPoint
-import ReversiHistory
-import ReversiConst
+from . import ReversiAnz
+from . import ReversiPoint
+from . import ReversiHistory
+from . import ReversiConst
 
 ################################################################################
 #	@class		Reversi

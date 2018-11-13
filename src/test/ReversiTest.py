@@ -15,8 +15,8 @@
 #
 ################################################################################
 
-import Reversi
-import ReversiConst
+from model import Reversi
+from model import ReversiConst
 
 ################################################################################
 #	@class		ReversiTest
