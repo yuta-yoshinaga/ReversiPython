@@ -52,7 +52,6 @@ class ReversiPlay:
 		self.__mGameEndSts	= 0
 		self.__mPlayLock	= 0
 		self.__mDelegate	= None
-		self.__mCallbacks	= None
 
 	############################################################################
 	#	@brief			ゲッター
@@ -305,31 +304,6 @@ class ReversiPlay:
 		self.__mDelegate = mDelegate
 
 	############################################################################
-	#	@brief			ゲッター
-	#	@fn				getmCallbacks(self)
-	#	@param[in]		self
-	#	@return			mCallbacks
-	#	@author			Yuta Yoshinaga
-	#	@date			2018.11.13
-	#
-	############################################################################
-	def getmCallbacks(self):
-		return self.__mCallbacks
-
-	############################################################################
-	#	@brief			セッター
-	#	@fn				setmCallbacks(self, mCallbacks)
-	#	@param[in]		self
-	#	@param[in]		mCallbacks
-	#	@return			ありません
-	#	@author			Yuta Yoshinaga
-	#	@date			2018.11.13
-	#
-	############################################################################
-	def setmCallbacks(self, mCallbacks):
-		self.__mCallbacks = mCallbacks
-
-	############################################################################
 	#	@brief			リバーシプレイ
 	#	@fn				reversiPlay(self, y, x)
 	#	@param[in]		self
@@ -348,7 +322,7 @@ class ReversiPlay:
 
 		if (self.__mPlayLock == 1): return
 		self.__mPlayLock = 1
-		if (self.mReversi.getColorEna(self._mCurColor) == 0):
+		if (self.mReversi.getColorEna(self.__mCurColor) == 0):
 			if (self.mReversi.setMasuSts(self.__mCurColor, y, x) == 0):
 				if (self.__mSetting.getmType() == ReversiConst.ReversiConst.DEF_TYPE_HARD): self.__mReversi.AnalysisReversi(self.__mPassEnaB, self.__mPassEnaW)
 				if (self.__mSetting.getmAssist() == ReversiConst.ReversiConst.DEF_ASSIST_ON):
@@ -430,7 +404,6 @@ class ReversiPlay:
 	############################################################################
 	def reversiPlaySub(self, cpuEna, tmpCol):
 		ret = 0
-		roop = True
 		while (True):
 			ret = self.reversiPlayCpu(tmpCol, cpuEna)
 			cpuEna = 0
@@ -730,7 +703,7 @@ class ReversiPlay:
 			self.drawUpdate(ReversiConst.ReversiConst.DEF_ASSIST_OFF)
 			if (self.__mSetting.getmAssist() == ReversiConst.ReversiConst.DEF_ASSIST_ON):
 				# *** メッセージ送信 ***
-				self.execMessage(ReversiConst.LC_MSG_DRAW_INFO_ALL, None)
+				self.execMessage(ReversiConst.ReversiConst.LC_MSG_DRAW_INFO_ALL, None)
 		return update
 
 	############################################################################
@@ -948,7 +921,7 @@ class ReversiPlay:
 			dMode = self.__mReversi.getMasuSts(msgPoint.getY(), msgPoint.getX())
 			dBack = self.__mReversi.getMasuStsEna(self.__mCurColor, msgPoint.getY(), msgPoint.getX())
 			dCnt = self.__mReversi.getMasuStsCnt(self.__mCurColor, msgPoint.getY(), msgPoint.getX())
-			self.DrawSingleLocal(msgPoint.getY(), msgPoint.getX(), dMode, dBack, String.valueOf(dCnt))
+			self.DrawSingleLocal(msgPoint.getY(), msgPoint.getX(), dMode, dBack, str(dCnt))
 		elif (what == ReversiConst.ReversiConst.LC_MSG_ERASE):
 			# *** マス消去 ***
 			msgPoint = obj
@@ -959,12 +932,12 @@ class ReversiPlay:
 			dMode = self.__mReversi.getMasuSts(msgPoint.getY(), msgPoint.getX())
 			dBack = self.__mReversi.getMasuStsEna(self.__mCurColor, msgPoint.getY(), msgPoint.getX())
 			dCnt = self.__mReversi.getMasuStsCnt(self.__mCurColor, msgPoint.getY(), msgPoint.getX())
-			self.DrawSingleLocal(msgPoint.getY(), msgPoint.getX(), dMode, dBack, String.valueOf(dCnt))
+			self.DrawSingleLocal(msgPoint.getY(), msgPoint.getX(), dMode, dBack, str(dCnt))
 		elif (what == ReversiConst.ReversiConst.LC_MSG_ERASE_INFO):
 			# *** マス情報消去 ***
 			msgPoint = obj
 			dMode = self.__mReversi.getMasuSts(msgPoint.getY(), msgPoint.getX())
-			self.__DrawSingleLocal(msgPoint.getY(), msgPoint.getX(), dMode, 0, '0')
+			self.DrawSingleLocal(msgPoint.getY(), msgPoint.getX(), dMode, 0, '0')
 		elif (what == ReversiConst.ReversiConst.LC_MSG_DRAW_ALL):
 			# *** 全マス描画 ***
 			for i in range(self.__mSetting.getmMasuCnt()):
@@ -972,7 +945,7 @@ class ReversiPlay:
 					dMode = self.__mReversi.getMasuSts(i, j)
 					dBack = self.__mReversi.getMasuStsEna(self.__mCurColor, i, j)
 					dCnt = self.__mReversi.getMasuStsCnt(self.__mCurColor, i, j)
-					self.DrawSingleLocal(i, j, dMode, dBack, String.valueOf(dCnt))
+					self.DrawSingleLocal(i, j, dMode, dBack, str(dCnt))
 		elif (what == ReversiConst.ReversiConst.LC_MSG_ERASE_ALL):
 			# *** 全マス消去 ***
 			for i in range(self.__mSetting.getmMasuCnt()):
@@ -985,7 +958,7 @@ class ReversiPlay:
 					dMode = self.__mReversi.getMasuSts(i, j)
 					dBack = self.__mReversi.getMasuStsEna(self.__mCurColor, i, j)
 					dCnt = self.__mReversi.getMasuStsCnt(self.__mCurColor, i, j)
-					self.DrawSingleLocal(i, j, dMode, dBack, String.valueOf(dCnt))
+					self.DrawSingleLocal(i, j, dMode, dBack, str(dCnt))
 		elif (what == ReversiConst.ReversiConst.LC_MSG_ERASE_INFO_ALL):
 			# *** 全マス情報消去 ***
 			for i in range(self.__mSetting.getmMasuCnt()):
@@ -1030,7 +1003,7 @@ class ReversiPlay:
 	############################################################################
 	def ViewMsgDlgLocal(self, title , msg):
 		if(self.__mDelegate != None):
-			self.__mCallbacks.getFuncs().add(self.__mDelegate.ViewMsgDlg(title, msg))
+			self.__mDelegate.ViewMsgDlg(title, msg)
 
 	############################################################################
 	#	@brief			1マス描画
@@ -1048,7 +1021,7 @@ class ReversiPlay:
 	############################################################################
 	def DrawSingleLocal(self, y, x, sts, bk, text):
 		if(self.__mDelegate != None):
-			self.__mCallbacks.getFuncs().add(self.__mDelegate.DrawSingle(y, x, sts, bk, text))
+			self.__mDelegate.DrawSingle(y, x, sts, bk, text)
 
 	############################################################################
 	#	@brief			現在の色メッセージ
@@ -1062,7 +1035,7 @@ class ReversiPlay:
 	############################################################################
 	def CurColMsgLocal(self, text):
 		if(self.__mDelegate != None):
-			self.__mCallbacks.getFuncs().add(self.__mDelegate.CurColMsg(text))
+			self.__mDelegate.CurColMsg(text)
 
 	############################################################################
 	#	@brief			現在のステータスメッセージ
@@ -1076,7 +1049,7 @@ class ReversiPlay:
 	############################################################################
 	def CurStsMsgLocal(self, text):
 		if(self.__mDelegate != None):
-			self.__mCallbacks.getFuncs().add(self.__mDelegate.CurStsMsg(text))
+			self.__mDelegate.CurStsMsg(text)
 
 	############################################################################
 	#	@brief			ウェイト
@@ -1090,7 +1063,7 @@ class ReversiPlay:
 	############################################################################
 	def WaitLocal(self, time):
 		if(self.__mDelegate != None):
-			self.__mCallbacks.getFuncs().add(self.__mDelegate.Wait(time))
+			self.__mDelegate.Wait(time)
 
 	mReversi = property(getmReversi, setmReversi)					# !< リバーシクラス
 	mSetting = property(getmSetting, setmSetting)					# !< リバーシ設定クラス
@@ -1102,5 +1075,4 @@ class ReversiPlay:
 	mGameEndSts = property(getmGameEndSts, setmGameEndSts)			# !< ゲーム終了ステータス
 	mPlayLock = property(getmPlayLock, setmPlayLock)				# !< プレイロック
 	mDelegate = property(getmDelegate, setmDelegate)				# !< デリゲート
-	mCallbacks = property(getmCallbacks, setmCallbacks)				# !< コールバック
 

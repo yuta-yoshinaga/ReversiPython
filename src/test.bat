@@ -16,4 +16,7 @@ echo.
 echo ReversiTest
 python -m test.ReversiTest
 echo.
+echo ReversiPlayTest
+python -m test.ReversiPlayTest
+echo.
 pause
