@@ -190,6 +190,56 @@ class ReversiPlayTest:
         else:
             print("TEST CASE10 NG " + str(self.tgt.mDelegate))
 
+    def test_case11(self):
+        self.tgt = ReversiPlay.ReversiPlay()
+        self.tgt.mDelegate = None
+        self.tgt.reversiPlay(2,4)
+        print("TEST CASE11 OK")
+
+    def test_case12(self):
+        self.tgt.reversiPlaySub(1,ReversiConst.ReversiConst.REVERSI_STS_WHITE)
+        print("TEST CASE12 OK")
+
+    def test_case13(self):
+        self.tgt.reversiPlayEnd()
+        print("TEST CASE13 OK")
+
+    def test_case14(self):
+        self.tgt.reversiPlayPass(ReversiConst.ReversiConst.REVERSI_STS_BLACK)
+        print("TEST CASE14 OK")
+
+    def test_case15(self):
+        self.tgt.reversiPlayCpu(ReversiConst.ReversiConst.REVERSI_STS_WHITE,1)
+        print("TEST CASE15 OK")
+
+    def test_case16(self):
+        self.tgt.drawUpdate(ReversiConst.ReversiConst.DEF_ASSIST_ON)
+        print("TEST CASE16 OK")
+
+    def test_case17(self):
+        self.tgt.drawUpdateForcibly(ReversiConst.ReversiConst.DEF_ASSIST_ON)
+        print("TEST CASE17 OK")
+
+    def test_case18(self):
+        self.tgt.reset()
+        print("TEST CASE18 OK")
+
+    def test_case19(self):
+        self.tgt.gameEndAnimExec()
+        print("TEST CASE19 OK")
+
+    def test_case20(self):
+        self.tgt.sendDrawMsg(2,4)
+        print("TEST CASE20 OK")
+
+    def test_case21(self):
+        self.tgt.sendDrawInfoMsg(2,4)
+        print("TEST CASE21 OK")
+
+    def test_case22(self):
+        self.tgt.execMessage(ReversiConst.ReversiConst.LC_MSG_ERASE_ALL, None)
+        print("TEST CASE22 OK")
+
 
 obj = ReversiPlayTest()
 obj.test_case1()
@@ -202,3 +252,15 @@ obj.test_case7()
 obj.test_case8()
 obj.test_case9()
 obj.test_case10()
+obj.test_case11()
+obj.test_case12()
+obj.test_case13()
+obj.test_case14()
+obj.test_case15()
+obj.test_case16()
+obj.test_case17()
+obj.test_case18()
+obj.test_case19()
+obj.test_case20()
+obj.test_case21()
+obj.test_case22()
