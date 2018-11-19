@@ -141,3 +141,5 @@ else:
         filename = '/my_log_file.log',
         filemode = 'a'
     )
+
+SESSION_SERIALIZER = 'django.contrib.sessions.serializers.PickleSerializer'

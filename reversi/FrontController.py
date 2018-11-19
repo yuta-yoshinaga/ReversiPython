@@ -15,6 +15,8 @@
 #
 ################################################################################
 
+import logging
+
 ################################################################################
 # 	@class		FrontController
 # 	@brief		フロントコントローラークラス
@@ -34,7 +36,8 @@ class FrontController:
     #
     ############################################################################
     def __init__(self):
-        self.__callbacks = []
+        self.__callbacks = {}
+        self.__callbacks['funcs'] = {}
         self.__callbacksIdx = 0
 
     ############################################################################
@@ -49,10 +52,9 @@ class FrontController:
     #
     ############################################################################
     def ViewMsgDlg(self, title, msg):
-        logging.debug('ViewMsgDlg : title = ' + str(title) + ' msg = ' + str(msg))
-        self.__callbacks['funcs'][self.__callbacksIdx]['func'] = 'ViewMsgDlg'
-        self.__callbacks['funcs'][self.__callbacksIdx]['param1'] = title
-        self.__callbacks['funcs'][self.__callbacksIdx]['param2'] = msg
+        logging.debug('ViewMsgDlg : title = ' +
+                      str(title) + ' msg = ' + str(msg))
+        self.__callbacks['funcs'].update({self.__callbacksIdx:{'func':'ViewMsgDlg','param1':title,'param2':msg}})
         self.__callbacksIdx += 1
 
     ############################################################################
@@ -71,13 +73,8 @@ class FrontController:
     ############################################################################
     def DrawSingle(self, y, x, sts, bk, text):
         logging.debug('DrawSingle : y = ' + str(y) + ' x = ' + str(x) + ' sts = ' + str(sts) +
-                ' bk = ' + str(bk) + ' text = ' + str(text))
-        self.__callbacks['funcs'][self.__callbacksIdx]['func'] = 'DrawSingle'
-        self.__callbacks['funcs'][self.__callbacksIdx]['param1'] = y
-        self.__callbacks['funcs'][self.__callbacksIdx]['param2'] = x
-        self.__callbacks['funcs'][self.__callbacksIdx]['param3'] = sts
-        self.__callbacks['funcs'][self.__callbacksIdx]['param4'] = bk
-        self.__callbacks['funcs'][self.__callbacksIdx]['param5'] = text
+                      ' bk = ' + str(bk) + ' text = ' + str(text))
+        self.__callbacks['funcs'].update({self.__callbacksIdx:{'func':'DrawSingle','param1':y,'param2':x,'param3':sts,'param4':bk,'param5':text}})
         self.__callbacksIdx += 1
 
     ############################################################################
@@ -92,8 +89,7 @@ class FrontController:
     ############################################################################
     def CurColMsg(self, text):
         logging.debug('CurColMsg : text = ' + str(text))
-        self.__callbacks['funcs'][self.__callbacksIdx]['func'] = 'CurColMsg'
-        self.__callbacks['funcs'][self.__callbacksIdx]['param1'] = text
+        self.__callbacks['funcs'].update({self.__callbacksIdx:{'func':'CurColMsg','param1':text}})
         self.__callbacksIdx += 1
 
     ############################################################################
@@ -108,8 +104,7 @@ class FrontController:
     ############################################################################
     def CurStsMsg(self, text):
         logging.debug('CurStsMsg : text = ' + str(text))
-        self.__callbacks['funcs'][self.__callbacksIdx]['func'] = 'CurStsMsg'
-        self.__callbacks['funcs'][self.__callbacksIdx]['param1'] = text
+        self.__callbacks['funcs'].update({self.__callbacksIdx:{'func':'CurStsMsg','param1':text}})
         self.__callbacksIdx += 1
 
     ############################################################################
@@ -124,8 +119,7 @@ class FrontController:
     ############################################################################
     def Wait(self, time):
         logging.debug('Wait : time = ' + str(time))
-        self.__callbacks['funcs'][self.__callbacksIdx]['func'] = 'Wait'
-        self.__callbacks['funcs'][self.__callbacksIdx]['param1'] = time
+        self.__callbacks['funcs'].update({self.__callbacksIdx:{'func':'Wait','param1':time}})
         self.__callbacksIdx += 1
 
     ############################################################################
@@ -178,5 +172,5 @@ class FrontController:
     def setCallbacksIdx(self, callbacksIdx):
         self.__callbacksIdx = callbacksIdx
 
-    callbacks = property(getCallbacks, setCallbacks) # !< コールバック
-    callbacksIdx = property(getCallbacksIdx, setCallbacksIdx) # !< コールバックインデックス
+    callbacks = property(getCallbacks, setCallbacks)  # !< コールバック
+    callbacksIdx = property(getCallbacksIdx, setCallbacksIdx)  # !< コールバックインデックス

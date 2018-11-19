@@ -3,6 +3,21 @@ var reversiSettingBk = reversiSetting;
 var storage = localStorage;
 
 $(document).ready(function() {
+    var csrftoken = $("[name=csrfmiddlewaretoken]").val();
+
+    function csrfSafeMethod(method) {
+        // these HTTP methods do not require CSRF protection
+        return (/^(GET|HEAD|OPTIONS|TRACE)$/.test(method));
+    }
+
+    $.ajaxSetup({
+        beforeSend: function(xhr, settings) {
+            if (!csrfSafeMethod(settings.type) && !this.crossDomain) {
+                xhr.setRequestHeader("X-CSRFToken", csrftoken);
+            }
+        }
+    });
+
     function callbacks(obj) {
         var wait_time = 0;
         Object.keys(obj).forEach(function(key) {
@@ -28,15 +43,11 @@ $(document).ready(function() {
 		var requestObj = $.stringify(reversiSetting);
         $.ajax({
             url: "./FrontController",
-            type: 'GET',
+            type: 'POST',
             data: {
                 func: "setSetting",
                 para: requestObj,
             },
-            beforeSend: function(xhr) {
-                xhr.setRequestHeader('X-CSRF-Token', $('meta[name="csrf-token"]').attr('content'));
-            },
-            xhrFields: { withCredentials: true },
         }).done(function(response, textStatus, jqXHR) {
             // 成功時処理
             // レスポンスデータはパースされた上でresponseに渡される
@@ -58,10 +69,6 @@ $(document).ready(function() {
             data: {
                 func: "reset",
             },
-            beforeSend: function(xhr) {
-                xhr.setRequestHeader('X-CSRF-Token', $('meta[name="csrf-token"]').attr('content'));
-            },
-            xhrFields: { withCredentials: true },
         }).done(function(response, textStatus, jqXHR) {
             // 成功時処理
             // レスポンスデータはパースされた上でresponseに渡される
@@ -85,10 +92,6 @@ $(document).ready(function() {
                 y: y,
                 x: x,
             },
-            beforeSend: function(xhr) {
-                xhr.setRequestHeader('X-CSRF-Token', $('meta[name="csrf-token"]').attr('content'));
-            },
-            xhrFields: { withCredentials: true },
         }).done(function(response, textStatus, jqXHR) {
             // 成功時処理
             // レスポンスデータはパースされた上でresponseに渡される
