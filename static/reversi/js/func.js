@@ -28,7 +28,7 @@ $(document).ready(function() {
 		var requestObj = $.stringify(reversiSetting);
         $.ajax({
             url: "./FrontController",
-            type: 'POST',
+            type: 'GET',
             data: {
                 func: "setSetting",
                 para: requestObj,
