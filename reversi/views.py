@@ -15,8 +15,8 @@ def index_template(request):
 
 @csrf_protect
 def frontController(request):
-    logging.debug('frontController')
-    logging.debug(request)
+    #logging.debug('frontController')
+    #logging.debug(request)
     frc = FrontController.FrontController()
     resJson = {}
     rvPlay = None
@@ -68,6 +68,6 @@ def frontController(request):
 
     resJson['callbacks'] = frc.callbacks
     request.session['rvPlay'] = rvPlay
-    logging.debug(resJson)
+    #logging.debug(resJson)
 
     return JsonResponse(resJson)
