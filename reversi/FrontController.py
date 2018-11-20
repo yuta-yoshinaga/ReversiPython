@@ -52,8 +52,7 @@ class FrontController:
     #
     ############################################################################
     def ViewMsgDlg(self, title, msg):
-        logging.debug('ViewMsgDlg : title = ' +
-                      str(title) + ' msg = ' + str(msg))
+        #logging.debug('ViewMsgDlg : title = ' + str(title) + ' msg = ' + str(msg))
         self.__callbacks['funcs'].update({self.__callbacksIdx:{'func':'ViewMsgDlg','param1':title,'param2':msg}})
         self.__callbacksIdx += 1
 
@@ -72,8 +71,7 @@ class FrontController:
     #
     ############################################################################
     def DrawSingle(self, y, x, sts, bk, text):
-        logging.debug('DrawSingle : y = ' + str(y) + ' x = ' + str(x) + ' sts = ' + str(sts) +
-                      ' bk = ' + str(bk) + ' text = ' + str(text))
+        #logging.debug('DrawSingle : y = ' + str(y) + ' x = ' + str(x) + ' sts = ' + str(sts) + ' bk = ' + str(bk) + ' text = ' + str(text))
         self.__callbacks['funcs'].update({self.__callbacksIdx:{'func':'DrawSingle','param1':y,'param2':x,'param3':sts,'param4':bk,'param5':text}})
         self.__callbacksIdx += 1
 
@@ -88,7 +86,7 @@ class FrontController:
     #
     ############################################################################
     def CurColMsg(self, text):
-        logging.debug('CurColMsg : text = ' + str(text))
+        #logging.debug('CurColMsg : text = ' + str(text))
         self.__callbacks['funcs'].update({self.__callbacksIdx:{'func':'CurColMsg','param1':text}})
         self.__callbacksIdx += 1
 
@@ -103,7 +101,7 @@ class FrontController:
     #
     ############################################################################
     def CurStsMsg(self, text):
-        logging.debug('CurStsMsg : text = ' + str(text))
+        #logging.debug('CurStsMsg : text = ' + str(text))
         self.__callbacks['funcs'].update({self.__callbacksIdx:{'func':'CurStsMsg','param1':text}})
         self.__callbacksIdx += 1
 
@@ -118,7 +116,7 @@ class FrontController:
     #
     ############################################################################
     def Wait(self, time):
-        logging.debug('Wait : time = ' + str(time))
+        #logging.debug('Wait : time = ' + str(time))
         self.__callbacks['funcs'].update({self.__callbacksIdx:{'func':'Wait','param1':time}})
         self.__callbacksIdx += 1
 

@@ -37,20 +37,19 @@ def frontController(request):
     if (func == 'setSetting'):
         para = request.POST['para']
         datas = json.loads(para)
-        print(datas)
         setting = ReversiSetting.ReversiSetting()
-        setting.mMode = datas['mMode']
-        setting.mType = datas['mType']
-        setting.mPlayer = datas['mPlayer']
-        setting.mAssist = datas['mAssist']
-        setting.mGameSpd = datas['mGameSpd']
-        setting.mEndAnim = datas['mEndAnim']
-        setting.mMasuCntMenu = datas['mMasuCntMenu']
-        setting.mMasuCnt = datas['mMasuCnt']
-        setting.mPlayCpuInterVal = datas['mPlayCpuInterVal']
-        setting.mPlayDrawInterVal = datas['mPlayDrawInterVal']
-        setting.mEndDrawInterVal = datas['mEndDrawInterVal']
-        setting.mEndInterVal = datas['mEndInterVal']
+        setting.mMode = int(datas['mMode'])
+        setting.mType = int(datas['mType'])
+        setting.mPlayer = int(datas['mPlayer'])
+        setting.mAssist = int(datas['mAssist'])
+        setting.mGameSpd = int(datas['mGameSpd'])
+        setting.mEndAnim = int(datas['mEndAnim'])
+        setting.mMasuCntMenu = int(datas['mMasuCntMenu'])
+        setting.mMasuCnt = int(datas['mMasuCnt'])
+        setting.mPlayCpuInterVal = int(datas['mPlayCpuInterVal'])
+        setting.mPlayDrawInterVal = int(datas['mPlayDrawInterVal'])
+        setting.mEndDrawInterVal = int(datas['mEndDrawInterVal'])
+        setting.mEndInterVal = int(datas['mEndInterVal'])
         setting.mPlayerColor1 = datas['mPlayerColor1']
         setting.mPlayerColor2 = datas['mPlayerColor2']
         setting.mBackGroundColor = datas['mBackGroundColor']
@@ -62,8 +61,8 @@ def frontController(request):
         rvPlay.reset()
         resJson['auth'] = '[SUCCESS]'
     elif (func == 'reversiPlay'):
-        y = request.POST['y']
-        x = request.POST['x']
+        y = int(request.POST['y'])
+        x = int(request.POST['x'])
         rvPlay.reversiPlay(y, x)
         resJson['auth'] = '[SUCCESS]'
 
