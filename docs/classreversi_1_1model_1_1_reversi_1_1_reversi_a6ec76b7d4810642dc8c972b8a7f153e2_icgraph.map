@@ -1,0 +1,12 @@
+<map id="reversi.model.Reversi.Reversi.makeMasuSts" name="reversi.model.Reversi.Reversi.makeMasuSts">
+<area shape="rect" id="node2" href="$classreversi_1_1model_1_1_reversi_1_1_reversi.html#ab2f683ccac37a151ba3278148eed2f12" title="解析を行う " alt="" coords="559,27,754,68"/>
+<area shape="rect" id="node3" href="$classreversi_1_1model_1_1_reversi_1_1_reversi.html#a5dc2040121cdf446c002b2460478fe9e" title="解析を行う(黒) " alt="" coords="294,34,489,75"/>
+<area shape="rect" id="node4" href="$classreversi_1_1model_1_1_reversi_1_1_reversi.html#af9f80e6296188e6f0866b71f3906a7bd" title="解析を行う(白) " alt="" coords="294,99,489,140"/>
+<area shape="rect" id="node5" href="$classreversi_1_1model_1_1_reversi_1_1_reversi.html#aaf4ace56a71cffafb17ccb95fc2d99ad" title="リセット " alt="" coords="280,165,503,192"/>
+<area shape="rect" id="node11" href="$classreversi_1_1model_1_1_reversi_1_1_reversi.html#ada80afed1ea72c201ac74803f3162d8e" title="指定座標にコマを置く " alt="" coords="285,216,497,258"/>
+<area shape="rect" id="node6" href="$classreversi_1_1model_1_1_reversi_1_1_reversi.html#aa2cd71a54525ca51c99b753aa9b8f12c" title="コンストラクタ " alt="" coords="559,92,754,134"/>
+<area shape="rect" id="node7" href="$classreversi_1_1model_1_1_reversi_1_1_reversi.html#aa81543caf0ea1f70aaf13235df5a349c" title="マスの数変更 " alt="" coords="551,158,763,199"/>
+<area shape="rect" id="node8" href="$classreversi_1_1model_1_1_reversi_anz_1_1_reversi_anz.html#a42bdd378ab09079bf90a4cebda9ef756" title="コンストラクタ " alt="" coords="571,223,742,264"/>
+<area shape="rect" id="node9" href="$classreversi_1_1model_1_1_reversi_history_1_1_reversi_history.html#a53c278c03f6755e081b8ab654239285b" title="コンストラクタ " alt="" coords="562,288,751,330"/>
+<area shape="rect" id="node10" href="$classreversi_1_1model_1_1_reversi_setting_1_1_reversi_setting.html#a8156143e00f484ec2a7fd4f40ccb5baa" title="コンストラクタ " alt="" coords="562,354,751,395"/>
+</map>

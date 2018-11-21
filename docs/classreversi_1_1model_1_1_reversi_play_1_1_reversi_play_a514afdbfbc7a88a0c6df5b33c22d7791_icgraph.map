@@ -1,0 +1,8 @@
+<map id="reversi.model.ReversiPlay.ReversiPlay.sendDrawMsg" name="reversi.model.ReversiPlay.ReversiPlay.sendDrawMsg">
+<area shape="rect" id="node2" href="$classreversi_1_1model_1_1_reversi_play_1_1_reversi_play.html#aefe7e1a801900fdaf3b62b1dbc998ef1" title="マス描画更新 " alt="" coords="247,41,421,82"/>
+<area shape="rect" id="node3" href="$classreversi_1_1model_1_1_reversi_play_1_1_reversi_play.html#a6734b1c6e9700bcad5ef2cfb62dfddc4" title="リバーシプレイ " alt="" coords="943,63,1117,105"/>
+<area shape="rect" id="node4" href="$classreversi_1_1model_1_1_reversi_play_1_1_reversi_play.html#a4c40a238f9ad1e847afe83c937601f67" title="リバーシプレイコンピューター " alt="" coords="487,93,667,134"/>
+<area shape="rect" id="node6" href="$classreversi_1_1model_1_1_reversi_play_1_1_reversi_play.html#af527935f2138440218bedd771c26955c" title="ゲーム終了アニメーション " alt="" coords="229,158,439,199"/>
+<area shape="rect" id="node5" href="$classreversi_1_1model_1_1_reversi_play_1_1_reversi_play.html#a21f346460cafebb32c2a6b589fc750b5" title="リバーシプレイサブ " alt="" coords="715,93,895,134"/>
+<area shape="rect" id="node7" href="$classreversi_1_1model_1_1_reversi_play_1_1_reversi_play.html#a7a4e4ba9ede55b1de12c21605f0d454e" title="リバーシプレイ終了 " alt="" coords="487,158,667,199"/>
+</map>

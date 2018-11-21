@@ -1,0 +1,18 @@
+<map id="reversi.model.Reversi.Reversi.checkPara" name="reversi.model.Reversi.Reversi.checkPara">
+<area shape="rect" id="node2" href="$classreversi_1_1model_1_1_reversi_1_1_reversi.html#aa6e646c16f4dc0ab38d65527399bb68b" title="履歴取得 " alt="" coords="309,5,521,47"/>
+<area shape="rect" id="node3" href="$classreversi_1_1model_1_1_reversi_1_1_reversi.html#a541d581714926607dbab7eed272d48f7" title="マスステータスを取得 " alt="" coords="309,71,521,112"/>
+<area shape="rect" id="node8" href="$classreversi_1_1model_1_1_reversi_1_1_reversi.html#a14ce1f136ac6682745f5defd5c96d3cb" title="指定座標の獲得コマ数取得 " alt="" coords="309,267,521,308"/>
+<area shape="rect" id="node9" href="$classreversi_1_1model_1_1_reversi_1_1_reversi.html#ad8014b7665403cf5d715726120b5c03d" title="指定座標に指定色を置けるかチェック " alt="" coords="309,136,521,177"/>
+<area shape="rect" id="node13" href="$classreversi_1_1model_1_1_reversi_1_1_reversi.html#abdd9185ee663e1c985d084fed832920b" title="以前のマスステータスを取得 " alt="" coords="309,332,521,373"/>
+<area shape="rect" id="node14" href="$classreversi_1_1model_1_1_reversi_1_1_reversi.html#aa8b524d0da805b223d72cee79b847c09" title="パス判定 " alt="" coords="309,397,521,439"/>
+<area shape="rect" id="node15" href="$classreversi_1_1model_1_1_reversi_1_1_reversi.html#a5f5f7f82efbd5718a01c8ae763b9b205" title="ポイント座標取得 " alt="" coords="309,201,521,243"/>
+<area shape="rect" id="node16" href="$classreversi_1_1model_1_1_reversi_1_1_reversi.html#a7836f9916891b8a61187f71f8c4bc2ee" title="ポイント座標解析取得 " alt="" coords="309,463,521,504"/>
+<area shape="rect" id="node17" href="$classreversi_1_1model_1_1_reversi_1_1_reversi.html#aa81543caf0ea1f70aaf13235df5a349c" title="マスの数変更 " alt="" coords="309,528,521,569"/>
+<area shape="rect" id="node4" href="$classreversi_1_1model_1_1_reversi_1_1_reversi.html#a1929b210b6220a9c05b77f5da438cf4c" title="角の隣に置いても角を取られないマス検索 " alt="" coords="569,9,828,35"/>
+<area shape="rect" id="node5" href="$classreversi_1_1model_1_1_reversi_1_1_reversi.html#a5dc2040121cdf446c002b2460478fe9e" title="解析を行う(黒) " alt="" coords="885,111,1079,152"/>
+<area shape="rect" id="node7" href="$classreversi_1_1model_1_1_reversi_1_1_reversi.html#af9f80e6296188e6f0866b71f3906a7bd" title="解析を行う(白) " alt="" coords="885,45,1079,87"/>
+<area shape="rect" id="node6" href="$classreversi_1_1model_1_1_reversi_1_1_reversi.html#ab2f683ccac37a151ba3278148eed2f12" title="解析を行う " alt="" coords="1136,79,1331,120"/>
+<area shape="rect" id="node10" href="$classreversi_1_1model_1_1_reversi_1_1_reversi.html#a0abab9790dec85ce77f4f786363d7df9" title="指定色が現在置ける場所があるかチェック " alt="" coords="593,111,805,152"/>
+<area shape="rect" id="node12" href="$classreversi_1_1model_1_1_reversi_1_1_reversi.html#ada80afed1ea72c201ac74803f3162d8e" title="指定座標にコマを置く " alt="" coords="593,228,805,269"/>
+<area shape="rect" id="node11" href="$classreversi_1_1model_1_1_reversi_1_1_reversi.html#ad725886715d1ebccb6d038e8e6a0e26b" title="ゲーム終了かチェック " alt="" coords="876,176,1088,217"/>
+</map>

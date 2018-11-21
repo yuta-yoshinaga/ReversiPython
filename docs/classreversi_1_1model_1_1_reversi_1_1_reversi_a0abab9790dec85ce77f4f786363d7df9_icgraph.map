@@ -1,0 +1,6 @@
+<map id="reversi.model.Reversi.Reversi.getColorEna" name="reversi.model.Reversi.Reversi.getColorEna">
+<area shape="rect" id="node2" href="$classreversi_1_1model_1_1_reversi_1_1_reversi.html#a5dc2040121cdf446c002b2460478fe9e" title="解析を行う(黒) " alt="" coords="274,5,469,47"/>
+<area shape="rect" id="node4" href="$classreversi_1_1model_1_1_reversi_1_1_reversi.html#af9f80e6296188e6f0866b71f3906a7bd" title="解析を行う(白) " alt="" coords="274,71,469,112"/>
+<area shape="rect" id="node5" href="$classreversi_1_1model_1_1_reversi_1_1_reversi.html#ad725886715d1ebccb6d038e8e6a0e26b" title="ゲーム終了かチェック " alt="" coords="265,136,477,177"/>
+<area shape="rect" id="node3" href="$classreversi_1_1model_1_1_reversi_1_1_reversi.html#ab2f683ccac37a151ba3278148eed2f12" title="解析を行う " alt="" coords="525,39,720,80"/>
+</map>

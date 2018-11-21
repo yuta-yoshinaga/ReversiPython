@@ -1,0 +1,16 @@
+<map id="reversi.model.ReversiPlay.ReversiPlay.reversiPlay" name="reversi.model.ReversiPlay.ReversiPlay.reversiPlay">
+<area shape="rect" id="node2" href="$classreversi_1_1model_1_1_reversi_play_1_1_reversi_play.html#a109ec4ab9c8ce65f9ec21227baad24c8" title="メッセージ " alt="" coords="1192,163,1367,204"/>
+<area shape="rect" id="node6" href="$classreversi_1_1model_1_1_reversi_play_1_1_reversi_play.html#a514afdbfbc7a88a0c6df5b33c22d7791" title="描画メッセージ送信 " alt="" coords="958,163,1134,204"/>
+<area shape="rect" id="node7" href="$classreversi_1_1model_1_1_reversi_play_1_1_reversi_play.html#aefe7e1a801900fdaf3b62b1dbc998ef1" title="マス描画更新 " alt="" coords="708,62,883,103"/>
+<area shape="rect" id="node9" href="$classreversi_1_1model_1_1_reversi_play_1_1_reversi_play.html#a780b875261cf73e9c61a08d04e598431" title="ウェイト " alt="" coords="959,388,1133,430"/>
+<area shape="rect" id="node10" href="$classreversi_1_1model_1_1_reversi_play_1_1_reversi_play.html#a05c4d4526b1459941200be6815f41d25" title="リバーシプレイパス " alt="" coords="456,390,643,431"/>
+<area shape="rect" id="node11" href="$classreversi_1_1model_1_1_reversi_play_1_1_reversi_play.html#a3f1ff1abf806b535b66bc3a32d7c808f" title="メッセージダイアログ " alt="" coords="697,448,894,490"/>
+<area shape="rect" id="node12" href="$classreversi_1_1model_1_1_reversi_play_1_1_reversi_play.html#a7a4e4ba9ede55b1de12c21605f0d454e" title="リバーシプレイ終了 " alt="" coords="459,324,639,366"/>
+<area shape="rect" id="node14" href="$classreversi_1_1model_1_1_reversi_play_1_1_reversi_play.html#a21f346460cafebb32c2a6b589fc750b5" title="リバーシプレイサブ " alt="" coords="228,270,408,311"/>
+<area shape="rect" id="node3" href="$classreversi_1_1model_1_1_reversi_play_1_1_reversi_play.html#a3854f47589be94b0c3c7efa0a7999712" title="1マス描画 " alt="" coords="1415,98,1605,139"/>
+<area shape="rect" id="node4" href="$classreversi_1_1model_1_1_reversi_play_1_1_reversi_play.html#a70cd7f680d9b4d1ea5610647983b34b8" title="現在の色メッセージ " alt="" coords="1415,163,1605,204"/>
+<area shape="rect" id="node5" href="$classreversi_1_1model_1_1_reversi_play_1_1_reversi_play.html#ac35b44b70f3bf84edb5f281fec762229" title="現在のステータスメッセージ " alt="" coords="1415,228,1605,270"/>
+<area shape="rect" id="node8" href="$classreversi_1_1model_1_1_reversi_play_1_1_reversi_play.html#a4b9c90b3955ab8001a8112508d28d4c3" title="情報描画メッセージ送信 " alt="" coords="948,98,1144,139"/>
+<area shape="rect" id="node13" href="$classreversi_1_1model_1_1_reversi_play_1_1_reversi_play.html#af527935f2138440218bedd771c26955c" title="ゲーム終了アニメーション " alt="" coords="691,331,900,372"/>
+<area shape="rect" id="node15" href="$classreversi_1_1model_1_1_reversi_play_1_1_reversi_play.html#a4c40a238f9ad1e847afe83c937601f67" title="リバーシプレイコンピューター " alt="" coords="459,200,639,242"/>
+</map>
