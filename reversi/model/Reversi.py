@@ -608,8 +608,8 @@ class Reversi:
 	#
 	############################################################################
 	def reset(self):
-		for i in range(self.__mMasuCntMax):
-			for j in range(self.__mMasuCntMax):
+		for i in range(self.__mMasuCnt):
+			for j in range(self.__mMasuCnt):
 				self.__mMasuSts[i][j] = ReversiConst.ReversiConst.REVERSI_STS_NONE
 				self.__mMasuStsPassB[i][j] = 0
 				self.__mMasuStsAnzB[i][j].reset()
@@ -647,8 +647,8 @@ class Reversi:
 		countMax = 0
 		loop = 0
 
-		for i in range(self.__mMasuCntMax):
-			for j in range(self.__mMasuCntMax):
+		for i in range(self.__mMasuCnt):
+			for j in range(self.__mMasuCnt):
 				if (color == ReversiConst.ReversiConst.REVERSI_STS_BLACK) :
 					self.__mMasuStsEnaB[i][j] = 0
 					self.__mMasuStsCntB[i][j] = 0
@@ -673,8 +673,8 @@ class Reversi:
 		self.__mMasuBetCntB = 0
 		self.__mMasuBetCntW = 0
 
-		for i in range(self.__mMasuCntMax):
-			for j in range(self.__mMasuCntMax):
+		for i in range(self.__mMasuCnt):
+			for j in range(self.__mMasuCnt):
 				okflg = 0
 				count2 = 0
 				if (self.__mMasuSts[i][j] == ReversiConst.ReversiConst.REVERSI_STS_NONE):
@@ -792,8 +792,8 @@ class Reversi:
 					self.__mMasuBetCntW += 1
 
 		# *** 一番枚数を獲得できるマスを設定 ***
-		for i in range(self.__mMasuCntMax):
-			for j in range(self.__mMasuCntMax):
+		for i in range(self.__mMasuCnt):
+			for j in range(self.__mMasuCnt):
 				if (color == ReversiConst.ReversiConst.REVERSI_STS_BLACK) :
 					if(self.__mMasuStsEnaB[i][j] != 0 and self.__mMasuStsCntB[i][j] == countMax) :
 						self.__mMasuStsEnaB[i][j] = 2
@@ -1080,8 +1080,8 @@ class Reversi:
 
 			sum = 0
 			sumOwn = 0
-			for i in range(self.__mMasuCntMax):
-				for j in range(self.__mMasuCntMax):
+			for i in range(self.__mMasuCnt):
+				for j in range(self.__mMasuCnt):
 					tmpBadPoint = 0
 					tmpGoodPoint = 0
 					if (self.getMasuStsEna(ReversiConst.ReversiConst.REVERSI_STS_WHITE,i,j) != 0) :
@@ -1227,8 +1227,8 @@ class Reversi:
 
 			sum = 0
 			sumOwn = 0
-			for i in range(self.__mMasuCntMax):
-				for j in range(self.__mMasuCntMax):
+			for i in range(self.__mMasuCnt):
+				for j in range(self.__mMasuCnt):
 					tmpBadPoint = 0
 					tmpGoodPoint = 0
 					if (self.getMasuStsEna(ReversiConst.ReversiConst.REVERSI_STS_BLACK,i,j) != 0):
@@ -1324,8 +1324,8 @@ class Reversi:
 	############################################################################
 	def AnalysisReversi(self, bPassEna, wPassEna):
 		# *** 相手をパスさせることができるマス検索 ***
-		for i in range(self.__mMasuCntMax):
-			for j in range(self.__mMasuCntMax):
+		for i in range(self.__mMasuCnt):
+			for j in range(self.__mMasuCnt):
 				self.__mMasuStsPassB[i][j] = 0
 				self.__mMasuStsAnzB[i][j].reset()
 				self.__mMasuStsPassW[i][j] = 0
@@ -1338,8 +1338,8 @@ class Reversi:
 		self.makeMasuSts(ReversiConst.ReversiConst.REVERSI_STS_WHITE)
 
 		# *** パスマスを取得 ***
-		for i in range(self.__mMasuCntMax):
-			for j in range(self.__mMasuCntMax):
+		for i in range(self.__mMasuCnt):
+			for j in range(self.__mMasuCnt):
 				if (self.__mMasuStsPassB[i][j] != 0) :
 					if (bPassEna != 0):
 						self.__mMasuStsEnaB[i][j] = 3
@@ -1435,8 +1435,8 @@ class Reversi:
 	############################################################################
 	def getColorEna(self, color):
 		ret = -1
-		for i in range(self.__mMasuCntMax):
-			for j in range(self.__mMasuCntMax):
+		for i in range(self.__mMasuCnt):
+			for j in range(self.__mMasuCnt):
 				if (self.getMasuStsEna(color,i,j) != 0):
 					ret = 0
 					break
