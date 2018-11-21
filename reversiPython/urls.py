@@ -18,6 +18,7 @@ from django.contrib import admin
 from django.conf.urls import include, url
 
 urlpatterns = [
-    url(r'^reversi/', include(('reversi.urls','reversi'),)),
+#    url(r'^reversi/', include(('reversi.urls','reversi'),)),
+    url('', include(('reversi.urls','reversi'),)),
     url('admin/', admin.site.urls),
 ]
