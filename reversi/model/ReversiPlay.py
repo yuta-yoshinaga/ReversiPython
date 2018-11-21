@@ -517,7 +517,7 @@ class ReversiPlay:
 				cpuEna = 0
 				# *** CPU対戦 ***
 				pCnt = self.__mReversi.getPointCnt(color)
-				pInfo = self.__mReversi.getPoint(color, random.randint(0, pCnt))
+				pInfo = self.__mReversi.getPoint(color, random.randint(0, pCnt - 1))
 				if (pInfo != None):
 					setY = pInfo.getY()
 					setX = pInfo.getX()
@@ -636,7 +636,7 @@ class ReversiPlay:
 										if (mem4 != -1):
 											mem2 = mem4
 									mem = mem2
-								if (mem == -1): mem = random.randint(0, rcnt1)
+								if (mem == -1): mem = random.randint(0, rcnt1 - 1)
 							elif (kadocnt != 0):
 								for i in range(kadocnt):
 									if (self.__mSetting.getmType() == ReversiConst.ReversiConst.DEF_TYPE_HARD):
@@ -675,7 +675,7 @@ class ReversiPlay:
 										if (mem4 != -1):
 											mem2 = mem4
 									mem = mem2
-								if (mem == -1): mem = random.randint(0, kadocnt)
+								if (mem == -1): mem = random.randint(0, kadocnt - 1)
 								# *** 置いても平気な角があればそこに置く***
 								for i in range(kadocnt):
 									if (self.__mReversi.checkEdge(color, self.__mEdge[i].getY(), self.__mEdge[i].getX()) != 0):
@@ -789,7 +789,7 @@ class ReversiPlay:
 		if (self.__mSetting.getmMode() == ReversiConst.ReversiConst.DEF_MODE_ONE):
 			if (self.__mCurColor == ReversiConst.ReversiConst.REVERSI_STS_WHITE):
 				pCnt = self.__mReversi.getPointCnt(ReversiConst.ReversiConst.REVERSI_STS_BLACK)
-				pInfo = self.__mReversi.getPoint(ReversiConst.ReversiConst.REVERSI_STS_BLACK, random.randint(0, pCnt))
+				pInfo = self.__mReversi.getPoint(ReversiConst.ReversiConst.REVERSI_STS_BLACK, random.randint(0, pCnt - 1))
 				if (pInfo != None):
 					self.__mReversi.setMasuSts(ReversiConst.ReversiConst.REVERSI_STS_BLACK, pInfo.getY(), pInfo.getX())
 					if (self.__mSetting.getmType() == ReversiConst.ReversiConst.DEF_TYPE_HARD): self.__mReversi.AnalysisReversi(self.__mPassEnaB, self.__mPassEnaW)
