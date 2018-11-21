@@ -193,8 +193,8 @@ $(document).ready(function() {
 
         var oldTheme = reversiSetting.mTheme;
         reversiSetting.mTheme = $("#mTheme .active input").val();
-        $('head link[href=".\/css\/theme\/' + oldTheme + '\/bootstrap.min.css"]').remove();
-        var addEle = '<link href=".\/css\/theme\/' + reversiSetting.mTheme + '\/bootstrap.min.css" rel="stylesheet" media="screen">';
+        $('head link[href="\/static\/reversi\/css\/theme\/' + oldTheme + '\/bootstrap.min.css"]').remove();
+        var addEle = '<link href="\/static\/reversi\/css\/theme\/' + reversiSetting.mTheme + '\/bootstrap.min.css" rel="stylesheet" media="screen">';
         $('head').append(addEle);
 
         reversiSetting.mPlayerColor1 = $('#mPlayerColor1 input').val();
