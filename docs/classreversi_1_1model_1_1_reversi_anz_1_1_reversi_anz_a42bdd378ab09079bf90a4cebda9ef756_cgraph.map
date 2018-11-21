@@ -1,0 +1,5 @@
+<map id="reversi.model.ReversiAnz.ReversiAnz.__init__" name="reversi.model.ReversiAnz.ReversiAnz.__init__">
+<area shape="rect" id="node2" href="$classreversi_1_1model_1_1_reversi_1_1_reversi.html#aaf4ace56a71cffafb17ccb95fc2d99ad" title="リセット " alt="" coords="224,13,447,39"/>
+<area shape="rect" id="node4" href="$classreversi_1_1model_1_1_reversi_anz_1_1_reversi_anz.html#a8a6593dcce1998f231ff4f7b46bab8fc" title="リセット " alt="" coords="250,64,421,105"/>
+<area shape="rect" id="node3" href="$classreversi_1_1model_1_1_reversi_1_1_reversi.html#a6ec76b7d4810642dc8c972b8a7f153e2" title="各コマの置ける場所等のステータス作成 " alt="" coords="495,5,721,47"/>
+</map>

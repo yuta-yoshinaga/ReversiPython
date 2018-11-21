@@ -1,0 +1,7 @@
+<map id="reversi.model.Reversi.Reversi.setMasuSts" name="reversi.model.Reversi.Reversi.setMasuSts">
+<area shape="rect" id="node2" href="$classreversi_1_1model_1_1_reversi_1_1_reversi.html#ad8014b7665403cf5d715726120b5c03d" title="指定座標に指定色を置けるかチェック " alt="" coords="273,5,485,47"/>
+<area shape="rect" id="node4" href="$classreversi_1_1model_1_1_reversi_1_1_reversi.html#a929660b6c9e93b7c401ff20fd4880510" title="コマをひっくり返す " alt="" coords="273,71,484,112"/>
+<area shape="rect" id="node5" href="$classreversi_1_1model_1_1_reversi_1_1_reversi.html#a6ec76b7d4810642dc8c972b8a7f153e2" title="各コマの置ける場所等のステータス作成 " alt="" coords="265,136,492,177"/>
+<area shape="rect" id="node6" href="$classreversi_1_1model_1_1_reversi_1_1_reversi.html#a5f5f7f82efbd5718a01c8ae763b9b205" title="ポイント座標取得 " alt="" coords="273,201,485,243"/>
+<area shape="rect" id="node3" href="$classreversi_1_1model_1_1_reversi_1_1_reversi.html#a43b0aa41f885c448abf4f0c760fee7fb" title="パラメーター範囲チェック " alt="" coords="540,111,796,138"/>
+</map>

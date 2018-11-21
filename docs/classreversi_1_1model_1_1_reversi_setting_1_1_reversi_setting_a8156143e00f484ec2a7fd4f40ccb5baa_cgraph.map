@@ -1,0 +1,13 @@
+<map id="reversi.model.ReversiSetting.ReversiSetting.__init__" name="reversi.model.ReversiSetting.ReversiSetting.__init__">
+<area shape="rect" id="node2" href="$classreversi_1_1model_1_1_reversi_1_1_reversi.html#aaf4ace56a71cffafb17ccb95fc2d99ad" title="リセット " alt="" coords="243,13,465,39"/>
+<area shape="rect" id="node4" href="$classreversi_1_1model_1_1_reversi_anz_1_1_reversi_anz.html#a8a6593dcce1998f231ff4f7b46bab8fc" title="リセット " alt="" coords="269,64,439,105"/>
+<area shape="rect" id="node5" href="$classreversi_1_1model_1_1_reversi_history_1_1_reversi_history.html#ae2473fce2f1b1dc5340356d0a39fe852" title="リセット " alt="" coords="259,129,449,171"/>
+<area shape="rect" id="node6" href="$classreversi_1_1model_1_1_reversi_play_1_1_reversi_play.html#a0265c57671b20c33f90f7b00666cb61e" title="リセット処理 " alt="" coords="267,195,441,236"/>
+<area shape="rect" id="node12" href="$classreversi_1_1model_1_1_reversi_setting_1_1_reversi_setting.html#a33464eee40397d2befecda53d559f56d" title="リセット " alt="" coords="259,260,449,301"/>
+<area shape="rect" id="node3" href="$classreversi_1_1model_1_1_reversi_1_1_reversi.html#a6ec76b7d4810642dc8c972b8a7f153e2" title="各コマの置ける場所等のステータス作成 " alt="" coords="513,5,740,47"/>
+<area shape="rect" id="node7" href="$classreversi_1_1model_1_1_reversi_play_1_1_reversi_play.html#afed8613261e2ba767d32ea2a01b78251" title="マス描画強制更新 " alt="" coords="523,165,731,207"/>
+<area shape="rect" id="node8" href="$classreversi_1_1model_1_1_reversi_play_1_1_reversi_play.html#a109ec4ab9c8ce65f9ec21227baad24c8" title="メッセージ " alt="" coords="788,195,963,236"/>
+<area shape="rect" id="node9" href="$classreversi_1_1model_1_1_reversi_play_1_1_reversi_play.html#a3854f47589be94b0c3c7efa0a7999712" title="1マス描画 " alt="" coords="1011,129,1201,171"/>
+<area shape="rect" id="node10" href="$classreversi_1_1model_1_1_reversi_play_1_1_reversi_play.html#a70cd7f680d9b4d1ea5610647983b34b8" title="現在の色メッセージ " alt="" coords="1011,195,1201,236"/>
+<area shape="rect" id="node11" href="$classreversi_1_1model_1_1_reversi_play_1_1_reversi_play.html#ac35b44b70f3bf84edb5f281fec762229" title="現在のステータスメッセージ " alt="" coords="1011,260,1201,301"/>
+</map>

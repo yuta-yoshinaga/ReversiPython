@@ -1,0 +1,6 @@
+<map id="reversi.model.ReversiPlay.ReversiPlay.sendDrawMsg" name="reversi.model.ReversiPlay.ReversiPlay.sendDrawMsg">
+<area shape="rect" id="node2" href="$classreversi_1_1model_1_1_reversi_play_1_1_reversi_play.html#a109ec4ab9c8ce65f9ec21227baad24c8" title="メッセージ " alt="" coords="229,71,404,112"/>
+<area shape="rect" id="node3" href="$classreversi_1_1model_1_1_reversi_play_1_1_reversi_play.html#a3854f47589be94b0c3c7efa0a7999712" title="1マス描画 " alt="" coords="452,5,643,47"/>
+<area shape="rect" id="node4" href="$classreversi_1_1model_1_1_reversi_play_1_1_reversi_play.html#a70cd7f680d9b4d1ea5610647983b34b8" title="現在の色メッセージ " alt="" coords="453,71,642,112"/>
+<area shape="rect" id="node5" href="$classreversi_1_1model_1_1_reversi_play_1_1_reversi_play.html#ac35b44b70f3bf84edb5f281fec762229" title="現在のステータスメッセージ " alt="" coords="452,136,643,177"/>
+</map>

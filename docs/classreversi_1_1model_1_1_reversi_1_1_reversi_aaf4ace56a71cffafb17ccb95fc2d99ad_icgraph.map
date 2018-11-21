@@ -1,0 +1,8 @@
+<map id="reversi.model.Reversi.Reversi.reset" name="reversi.model.Reversi.Reversi.reset">
+<area shape="rect" id="node2" href="$classreversi_1_1model_1_1_reversi_anz_1_1_reversi_anz.html#a42bdd378ab09079bf90a4cebda9ef756" title="コンストラクタ " alt="" coords="297,5,467,47"/>
+<area shape="rect" id="node3" href="$classreversi_1_1model_1_1_reversi_history_1_1_reversi_history.html#a53c278c03f6755e081b8ab654239285b" title="コンストラクタ " alt="" coords="287,71,477,112"/>
+<area shape="rect" id="node4" href="$classreversi_1_1model_1_1_reversi_setting_1_1_reversi_setting.html#a8156143e00f484ec2a7fd4f40ccb5baa" title="コンストラクタ " alt="" coords="287,136,477,177"/>
+<area shape="rect" id="node5" href="$classreversi_1_1model_1_1_reversi_1_1_reversi.html#aa2cd71a54525ca51c99b753aa9b8f12c" title="コンストラクタ " alt="" coords="285,201,479,243"/>
+<area shape="rect" id="node6" href="$classreversi_1_1model_1_1_reversi_1_1_reversi.html#ab2f683ccac37a151ba3278148eed2f12" title="解析を行う " alt="" coords="285,267,479,308"/>
+<area shape="rect" id="node7" href="$classreversi_1_1model_1_1_reversi_1_1_reversi.html#aa81543caf0ea1f70aaf13235df5a349c" title="マスの数変更 " alt="" coords="276,332,488,373"/>
+</map>

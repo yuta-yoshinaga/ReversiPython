@@ -1,0 +1,5 @@
+<map id="reversi.model.Reversi.Reversi.getPointCnt" name="reversi.model.Reversi.Reversi.getPointCnt">
+<area shape="rect" id="node2" href="$classreversi_1_1model_1_1_reversi_1_1_reversi.html#a5dc2040121cdf446c002b2460478fe9e" title="解析を行う(黒) " alt="" coords="265,5,460,47"/>
+<area shape="rect" id="node4" href="$classreversi_1_1model_1_1_reversi_1_1_reversi.html#af9f80e6296188e6f0866b71f3906a7bd" title="解析を行う(白) " alt="" coords="265,71,460,112"/>
+<area shape="rect" id="node3" href="$classreversi_1_1model_1_1_reversi_1_1_reversi.html#ab2f683ccac37a151ba3278148eed2f12" title="解析を行う " alt="" coords="508,39,703,80"/>
+</map>
