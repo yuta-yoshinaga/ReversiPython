@@ -9,14 +9,14 @@
 ## Usage
 ### Install
 ```sh
-git clone https://github.com/yuta-yoshinaga/reversipython.git
+git clone https://github.com/yuta-yoshinaga/ReversiPython.git
 cd reversipython
 ```
 
 ### Deploy
 ![herokubutton](https://www.herokucdn.com/deploy/button.svg)  
 [Heroku](https://reversipython.herokuapp.com/)<br>
-[API Document](https://yuta-yoshinaga.github.io/reversipython/)
+[API Document](https://yuta-yoshinaga.github.io/ReversiPython/)
 
 ## Future Releases
 TensorFlowを使って、AIの更新がしたい。
