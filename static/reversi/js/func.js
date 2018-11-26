@@ -317,8 +317,8 @@ function set_menu_ui() {
     ele = $('#mBorderColor input').attr('value', reversiSetting.mBorderColor);
     ele = $('#mBorderColor input').minicolors('value', reversiSetting.mBorderColor);
     var oldTheme = reversiSetting.mTheme;
-    $('head link[href=".\/css\/theme\/' + oldTheme + '\/bootstrap.min.css"]').remove();
-    var addEle = '<link href=".\/css\/theme\/' + reversiSetting.mTheme + '\/bootstrap.min.css" rel="stylesheet" media="screen">';
+    $('head link[href="\/static\/reversi\/css\/theme\/' + oldTheme + '\/bootstrap.min.css"]').remove();
+    var addEle = '<link href="\/static\/reversi\/css\/theme\/' + reversiSetting.mTheme + '\/bootstrap.min.css" rel="stylesheet" media="screen">';
     $('head').append(addEle);
 }
 
