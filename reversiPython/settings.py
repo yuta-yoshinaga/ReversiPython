@@ -148,7 +148,7 @@ else:
 SESSION_SERIALIZER = 'django.contrib.sessions.serializers.PickleSerializer'
 
 
-DEBUG = False
+DEBUG = True
 DEBUG_PROPAGATE_EXCEPTIONS = True
 
 try:
