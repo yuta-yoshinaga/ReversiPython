@@ -14,8 +14,8 @@ cd reversipython
 ```
 
 ### Deploy
-![herokubutton](https://www.herokucdn.com/deploy/button.svg)  
-[Heroku](https://reversipython.herokuapp.com/)<br>
+[render live](https://reversipython.onrender.com/)
+[render dev](https://reversipython-dev.onrender.com/)
 [API Document](https://yuta-yoshinaga.github.io/ReversiPython/)
 
 ## Future Releases
