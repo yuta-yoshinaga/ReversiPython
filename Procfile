@@ -1,1 +1,0 @@
-web: gunicorn reversiPython.wsgi --log-file -
